@@ -34,8 +34,13 @@ function AboutKairo() {
                             <div>[Market analysis]</div>
                             <div>[Growth strategy]</div>
                         </div>
-                        <div className='md:py-16'>
-                            <PrimaryButton ctaText={"Get a quote"} className={"bg-[#20324f]"}/>
+                        <div className='md:py-16 py-6'>
+                            <PrimaryButton 
+                            ctaText={"Get a quote"} 
+                            className={"bg-[#20324f] text-#f1f1f1 group-hover:bg-[#f1f1f1] group-hover:border group-hover:border-[#20324f] transition-all duration-300"}
+                            btnTextClass = {"text-[#f1f1f1] group-hover:text-[#212121] transition-all duration-300"}
+                            circelClass = {"bg-[#f1f1f1] group-hover:bg-[#20324f]! group-hover:text-[#f1f1f1]!"}
+                            />
                         </div>
 
                         <div className="">

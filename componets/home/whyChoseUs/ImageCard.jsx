@@ -17,7 +17,10 @@ function ImageCard() {
           We deliver expert business advice that helps leaders scale.
         </p>
 
-        <PrimaryButton ctaText={"Get a quote"}/>
+        <PrimaryButton 
+        ctaText={"Get a quote"}
+        circelClass={"bg-[#f1f1f1] text-[#20324f]"}
+        />
       </div>
     </Card>
   );

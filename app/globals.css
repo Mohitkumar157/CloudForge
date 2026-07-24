@@ -1,5 +1,64 @@
 @import "tailwindcss";
 
+
+:root {
+  /* Paragraph */
+  --paragraph-primary: #000000;
+  --paragraph-secondary: #3d4753;
+
+  /* Heading */
+  --heading-primary: #f1f1f1;
+  --text-primary: #f1f1f1;
+  --subheading-primary: #3d4753;
+
+  /* Border */
+  --border-primary: #ccc;
+  --border-secondary: #d1d5db;
+  /* background */
+  --bg-secondry : #f8f8f8;
+  --bg-theme : #20324f;
+  --bg-primary : white;
+  --bg-slider : #3d4753;
+  --bg-cards : #59624d;
+  --bg-section : #c6bdab;
+  --bg-icon : #c6bdab;
+}
+
+.dark {
+   --background : #000000;
+  /* Paragraph */
+  --paragraph-primary: #f1f1f1;
+  --paragraph-secondary: #b6bec9;
+
+  /* Heading */
+  --heading-primary: #ffffff;
+  --subheading-primary: #d1d5db;
+
+  /* Border */
+  --border-primary: #ffffff;
+  --border-secondary: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+  
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+.pause-animation {
+  animation-play-state: paused;
+}
 body{
     background-color: #f1f1f1;
     color: #212121;
@@ -7,7 +66,6 @@ body{
 .container{
     max-width: 1280px !important;
     margin: 0 auto;
-    padding: 0 16px;
 }
 .hero-overlay {
   background:

@@ -12,7 +12,11 @@ function InfoCard({ title, subtitle, description }) {
                 </p>
             </div>
 
-           <PrimaryButton ctaText={"Get a quote"}/>
+           <PrimaryButton 
+           ctaText={"Get a quote"}
+           className={"border! border-[#20324f]! group-hover:bg-[#20324f] group-hover:text-[#f1f1f1]"}
+           circelClass={"group-hover:text-[#20324f] bg-[#20324f]"}
+           />
         </Card>
     );
 }

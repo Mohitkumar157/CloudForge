@@ -31,7 +31,7 @@ function CardScrollSlider() {
     scrollTrigger: {
       trigger: sectionRef.current,
       start: "top 99%",
-      end: "+=300",
+      end: "+=400",
       scrub: 1,
     },
   });

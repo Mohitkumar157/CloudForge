@@ -1,6 +1,11 @@
+"use client";
 import PrimaryButton from '@/componets/ui/PrimaryButton'
 import React from 'react'
 import Image from 'next/image'
+import Line from './Line'
+import ClientAvatars from '@/componets/ui/ClientAvatars';
+
+
 const slideImages = [
     {
         id: 1,
@@ -16,18 +21,32 @@ const slideImages = [
     },
 ]
 
+
 function HeroContent() {
     return (
-        <div className='fixed w-full z-50 top-[20%] left-0 flex justify-center'>
-            <div className='container relative flex justify-between px-4!'>
+        <div className='fixed w-full z-50 top-[20%] left-0 flex justify-center pointer-events-none'>
+            <div className='container relative flex justify-between '>
                 <div className='md:w-[50%] text-[#f1f1f1]'>
-                    <h1 className='text-6xl w-fit font-semibold'>Design <br /> that drives growth</h1>
+                    <h1 className='text-6xl w-fit font-semibold'>
+                        <div className='flex gap-5 items-end'>
+                            <div className='w-fit'>Design</div>
+                             <ClientAvatars />
+                        </div>
+                        <div>that drives growth</div>
+                    </h1>
                     <p className='font-semibold my-8 w-fit'>
                         We create modern, user-focused digital
                         experiences that help <br /> businesses stand out,
                         engage customers, and scale faster.
                     </p>
-                    <PrimaryButton ctaText={"lets talk"} className="mb-9" />
+
+                    <PrimaryButton
+                        ctaText={"lets talk"}
+                        className="mb-9 pointer-events-auto group-hover:bg-[#20324f] 
+                        bg-[#f1f1f1] group-hover:text-[#f1f1f1]"
+                        btnTextClass={"text-[#212121] group-hover:text-[#f1f1f1] transition-all duration-300"}
+                        circelClass={"bg-[#20324f] group-hover:bg-[#f1f1f1] group-hover:text-[#20324f]"}
+                    />
 
                     <div className='pt-7 flex items-center gap-5 border-t border-[#ccc] w-fit'>
                         <div className='flex gap-4 items-center'>
@@ -46,20 +65,26 @@ function HeroContent() {
                 <div className='md:w-[50%] flex justify-end'>
                     <div className='w-55 h-auto'>
 
-                        <div className=' flex flex-col gap-4 '>
+                        <div className=' flex flex-col gap-4 items-end relative'>
                             {slideImages.map((slide, index) => <div
                                 className='rounded-lg overflow-hidden'
                                 key={index}>
-                                <Image width={250} height={250} src={slide.image} alt="busniess" className='object-cover ' />
+                                <Image
+                                    style={{ width: "auto", height: "auto" }}
+                                    width={200}
+                                    height={200}
+                                    src={slide.image}
+                                    alt="busniess"
+                                    className='object-cover ' />
                             </div>
                             )}
+                            <Line />
                         </div>
 
                     </div>
                 </div>
-                <h2 className='absolute -bottom-81 left-0 text-[#f1f1f1] font-semibold text-[220px] z-40'>
-                    Resilience
-                </h2>
+
+
             </div>
         </div>
     )
