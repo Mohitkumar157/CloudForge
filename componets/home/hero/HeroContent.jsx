@@ -69,7 +69,7 @@ function HeroContent() {
                     </div>
                 </div>
 
-                <div className='hidden md:block  md:w-[50%] md:flex justify-end'>
+                <div className='md:w-[50%] md:flex justify-end'>
                     <div className='w-55 h-auto'>
 
                         <div className=' flex flex-col gap-4 items-end relative'>

@@ -4,7 +4,7 @@ import HorizontalStatCard from './HorizontalStatCard'
 
 function Achievement() {
   return (
-    <section>
+    <section className = "pb-16 md:pb-20 lg:pb-24">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-4">
         <StatCard />
         <div className='grid grid-cols-1 md:grid-cols-2 md:col-span-2 gap-4'>

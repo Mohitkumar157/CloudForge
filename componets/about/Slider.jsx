@@ -4,15 +4,15 @@ import SliderComponent from '../ui/header/SliderComponent'
 
 function Slider() {
     return (
-        <section >
+        <section className='py-16 md:py-20 lg:py-24'>
             <div className='container text-center'>
-                <div className='pt-26 pb-10'>
-                    <div className="flex items-center justify-center gap-3 font-semibold text-(--subheading-primary) uppercase mb-2">
+                <div>
+                    <div className="flex items-start justify-start md:items-center md:justify-center gap-3 font-semibold text-(--subheading-primary) uppercase mb-2">
                         <span className="inline-block w-2 h-2 rounded-full bg-(--paragraph-primary)"></span>
-                        about Avorica
+                        about CloudForge
                     </div>
-                    <div className="heading">
-                        <h2 className='font-semibold leading-12'>We are strategic partners delivering <br /> innovation growth</h2>
+                    <div className="heading pb-16">
+                        <h2 className='font-semibold text-start md:text-center leading-12'>We are strategic partners delivering <br className='hidden md:block'/> innovation growth</h2>
                     </div>
                 </div>
             </div>

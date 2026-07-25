@@ -4,7 +4,7 @@ import Form from './Form'
 
 function FormWraper() {
   return (
-    <section className='py-20'>
+    <section className='pt-16 md:pt-20 lg:pt-24'>
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="relative aspect-square rounded-2xl overflow-hidden">
           <Image

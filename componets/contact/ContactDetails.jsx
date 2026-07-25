@@ -21,7 +21,7 @@ const cardData = [
 function ContactDetails() {
   const [active, setActive] = useState(0);
   return (
-    <section className='pt-20'>
+    <section className='pt-16 md:pt-20 lg:pt-24'>
       <div className="container grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {
           cardData.map((cardData, i) =>

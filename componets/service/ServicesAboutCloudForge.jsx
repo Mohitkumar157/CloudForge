@@ -4,9 +4,9 @@ import AnimatedParagraph from '../ui/AnimatedParagraph';
 
 function ServicesAboutCloudForge() {
   return (
-    <section className='py-16'>
+    <section className='py-16 md:py-20 lg:py-24'>
         <div className='container'>
-         <div className='flex justify-center items-start gap-20'>
+         <div className='flex flex-col gap-0 md:flex-row justify-center items-start md:gap-20'>
             <SubHeading headingText={"about CloudForge"}/>
             <AnimatedParagraph
             className = {"text-4xl font-semibold"}

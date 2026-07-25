@@ -9,9 +9,9 @@ function MeasurableAchievements() {
       </h2>
       <FlipperSlider />
       <div className='pb-16  rounded-lg text-(--heading-primary) flex justify-center items-center gap-6'>
-        <div className='flex justify-center items-center gap-3 bg-[#ffffff0f] px-2 py-2 rounded-full'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-3 bg-[#ffffff0f] p-4 rounded-full'>
           <span className='uppercase font-semibold text-(--paragraph-primary) bg-(--heading-primary) px-2 rounded-full'>Trust</span>
-        <p className='font-semibold pr-5'>Join the 750+ enterprises trusting our expert business consultancy services</p>
+        <p className='font-semibold pr-5 text-center'>Join the 750+ enterprises trusting our expert business consultancy services</p>
         </div>
         </div>
     </section>

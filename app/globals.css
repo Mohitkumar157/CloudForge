@@ -68,11 +68,7 @@ body{
     margin: 0 auto;
     padding: 0 16px;
 }
-.hero-overlay {
-  background:
-    linear-gradient(90deg, #0f1e364d 29%, #fff0 53%),
-    linear-gradient(#0f1e3626, #fff0 16%);
-}
+
 h2{
     font-size: 40px;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react';
 import FooterHeader from './FooterHeader'
-
+import Link from 'next/link';
 function Footer() {
   return (
     <footer className="footer bg-[url('/footer-bg.avif')] py-16 bg-cover bg-center mt-25">
@@ -11,8 +11,8 @@ function Footer() {
       <div className='w-full h-px bg-[#ccc]'></div>
       <div className="container py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className='flex flex-col gap-18'>
-            <h2 className='text-[#f1f1f1] leading-12'>Subscribe to our <br /> newsletter</h2>
+          <div className='flex flex-col gap-8 md:gap-18'>
+            <h4 className='text-[#f1f1f1] text-[40px] mt-4 md:mt-0 leading-12'>Subscribe to our <br /> newsletter</h4>
             <form
               className='flex flex-col gap-9'
             >
@@ -44,11 +44,25 @@ function Footer() {
             <div className='flex flex-col gap-5'>
               <h2 className='text-[#f1f1f1] text-[20px]!'>Quick links</h2>
               <ul className='list-none'>
-                <li className='mb-2'>Home</li>
-                <li className='mb-2'>About</li>
-                <li className='mb-2'>Pricing</li>
-                <li className='mb-2'>Blog</li>
-                <li className='mb-2'>Contact</li>
+                <li className="mb-2">
+                  <Link href="/">Home</Link>
+                </li>
+
+                <li className="mb-2">
+                  <Link href="/about">About</Link>
+                </li>
+
+                <li className="mb-2">
+                  <Link href="/pricing">Services</Link>
+                </li>
+
+                <li className="mb-2">
+                  <Link href="/blog">Blog</Link>
+                </li>
+
+                <li className="mb-2">
+                  <Link href="/contact">Contact</Link>
+                </li>
 
               </ul>
             </div>

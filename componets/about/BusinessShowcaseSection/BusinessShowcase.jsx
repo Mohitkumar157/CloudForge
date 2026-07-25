@@ -4,7 +4,7 @@ import ServicesOverview from './ServicesOverview'
 
 function BusinessShowcase() {
     return (
-        <section className='py-16'>
+        <section className='py-16 md:py-20 lg:py-24'>
             <div className="container">
                 <StrategySection />
                 <ServicesOverview />

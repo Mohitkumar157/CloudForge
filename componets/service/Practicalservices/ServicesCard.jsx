@@ -5,7 +5,7 @@ function ServicesCard({data :{description , title , image , tags}}) {
     
     return (
         <section className='border-t border-(--border-primary)'>
-            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-6">
+            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-6!">
                 <div className='hidden lg:block'>
                     <div className='flex gap-1'>
                         <img src="/service/white-star.svg" alt="star" loading='lazy' />
@@ -14,8 +14,8 @@ function ServicesCard({data :{description , title , image , tags}}) {
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-20'>
-                    <h3 className='text-(--heading-primary)'>{title}</h3>
+                <div className='flex flex-col gap-6 md:gap-20'>
+                    <h3 className='text-(--heading-primary) mt-4 md:mt-0'>{title}</h3>
 
                     <div>
                         <article className='text-(--text-primary)'>

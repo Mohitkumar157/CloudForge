@@ -30,7 +30,7 @@ const stats = [
 
 function Stats() {
   return (
-    <section className='mt-4 pb-26'>
+    <section className='pb-16 md:pb-20 lg:pb-24'>
       <div className="container">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {stats.map((item , i) => <StatsCard key={i} data = {item}/>)}

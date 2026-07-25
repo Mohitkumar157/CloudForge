@@ -23,10 +23,10 @@ const teamData = [
 
 function OurTeam() {
   return (
-    <section className='py-26 bg-[#c6bdab]'>
+    <section className='py-16 md:py-20 lg:py-24 bg-[#c6bdab]'>
       <div className='flex flex-col justify-center items-center'>
         <SubHeading headingText={"Our team"}/>
-        <h2 className='text-[40px] font-semibold mb-9'>Meet the other team members</h2>
+        <h2 className='text-[40px] text-center leading-12 font-semibold mb-9'>Meet the other team members</h2>
       </div>
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-4">
         {teamData.map((card , index) => (

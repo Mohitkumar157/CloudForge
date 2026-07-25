@@ -36,7 +36,7 @@ function OurBlog() {
                     about CloudForge
                 </h3>
                 <div className='flex flex-col items-start gap-4 md:flex-row justify-between md:items-center border-b border-[#0003] pb-10'>
-                    <h2 className='leading-10'>
+                    <h2 className='leading-12'>
                         Building smarter solutions for
                         <br className='hidden lg:block'/>
                         modern businesses

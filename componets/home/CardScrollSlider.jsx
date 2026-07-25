@@ -38,10 +38,10 @@ function CardScrollSlider() {
 }, []);
     return (
         <div ref={sectionRef} className="slide-section">
-            <div className="flex justify-between items-center gap-4">
+            <div className="flex justify-between flex-wrap md:flex-nowrap items-center gap-4">
                 {cardImages.map((image, index) =>
                     <div
-                        className="relative md:w-[20%] h-60 rounded-xl overflow-hidden"
+                        className="relative w-full md:w-[20%] h-60 rounded-xl overflow-hidden"
                         key={index}
                         ref={(el) => (cardRef.current[index] = el)}
                     >
@@ -49,7 +49,7 @@ function CardScrollSlider() {
                             src={image}
                             alt="card-image"
                             fill
-                            className="object-cover "
+                            className="object-cover object-top"
                         />
                     </div>)}
             </div>

@@ -9,7 +9,7 @@ function Hero() {
                     <span className="inline-block w-2 h-2 rounded-full bg-(--bg-primary)"></span>
                     Our blog
                 </div>
-                <h1 className='text-6xl font-semibold capitalize'>Strategic business insights</h1>
+                <h1 className='text-4xl text-center font-semibold capitalize'>Strategic business insights</h1>
             </div>
         </section>
     )

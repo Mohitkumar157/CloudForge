@@ -1,6 +1,6 @@
 "use client"
 import gsap from 'gsap';
-import React, { useEffect, useRef } from 'react'
+import React, {useRef } from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useGSAP } from '@gsap/react';
@@ -87,11 +87,13 @@ function HeroSlides({ children }) {
 
                 </div>)}
             {children}
-            <div onMouseMove={mouseMove} className="hero-overlay cursor-pointer z-40 absolute inset-0">
+            <div onMouseMove={mouseMove} className="hero-overlay cursor-pointer z-40 absolute inset-0 bg-[linear-gradient(#fff0_67%,#0f1e36ab),linear-gradient(#0f1e36b8,#fff0_26%),linear-gradient(#0f1e3652,#0f1e3652)]">
                 <div style={{
                     background: "#f1f1f1",
                     filter: "blur(250px)",
-                }} ref={circelRef} className='circel w-75 h-75  rounded-full absolute'></div>
+                }} ref={circelRef} className='circel w-75 h-75  rounded-full absolute'>
+
+                </div>
             </div>
             <h2
                 className='hidden lg:block absolute -bottom-31 left-15

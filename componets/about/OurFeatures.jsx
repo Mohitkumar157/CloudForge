@@ -30,7 +30,7 @@ const services = [
 function OurFeatures() {
 
   return (
-    <section className='py-26'>
+    <section className='py-16 md:py-20 lg:py-24'>
       <div className="container">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <FeatureCard>

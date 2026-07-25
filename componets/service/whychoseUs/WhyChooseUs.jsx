@@ -41,7 +41,7 @@ const businessMetrics = [
 
 function WhyChooseUs() {
   return (
-    <section className='bg-(--bg-section) py-16'>
+    <section className='bg-(--bg-section) py-16 md:py-20 lg:py-24'>
       <div className="container">
         <h2 className='text-center leading-12 font-semibold mb-12'>Why leading companies choose <br /> our consulting</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

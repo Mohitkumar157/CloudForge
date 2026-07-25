@@ -23,7 +23,7 @@ function AboutCloudForge() {
                     </div>
 
                     <div className="clients md:w-[40%]">
-                        <div className='flex items-center justify-between'>
+                        <div className='flex flex-col items-start gap-4 md:gap-0 md:flex-row md:items-center justify-between'>
                             <ClientAvatars happyClients={happyClients}/>
                             <div className='text-(--heading-primary) font-semibold'>
                                 <p >Rated by our consulting clients</p>
@@ -31,7 +31,7 @@ function AboutCloudForge() {
                             </div>
                         </div>
                         <div>
-                            <p className='text-(--heading-primary) font-semibold mt-10'>
+                            <p className='text-(--heading-primary) font-semibold mt-4 md:mt-10'>
                                 We create modern, user-focused digital experiences that
                                 help businesses stand out, engage
                                 customers, and scale faster.

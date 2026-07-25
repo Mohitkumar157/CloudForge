@@ -29,7 +29,7 @@ const businessServices = [
 function HeroContent() {
   return (
     <div className='absolute z-10 w-full '>
-      <div className="container flex flex-col justify-between gap-16">
+      <div className="container flex flex-col justify-between gap-8 md:gap-16">
         <div>
           <div className='flex items-center'>
             <ClientAvatars happyClients={happyClients} />
@@ -41,7 +41,7 @@ function HeroContent() {
               <span className='text-(--text-primary)'>Trusted worldwide</span>
             </div>
           </div>
-          <h1 className='text-6xl font-semibold text-(--heading-primary) my-8'>Smart strategies that <br /> drive business growth</h1>
+          <h1 className='md:text-6xl text-4xl font-semibold text-(--heading-primary) my-4 md:my-8'>Smart strategies that <br /> drive business growth</h1>
           <PrimaryButton
             ctaText={"lets talk"}
             className="pointer-events-auto group-hover:bg-[#20324f] 
@@ -53,12 +53,12 @@ function HeroContent() {
 
         <div>
           <p className='text-(--text-primary)'>
-            We create modern, user-focused digital <br />
-            experiences that help businesses stand out, <br />
+            We create modern, user-focused digital <br className = "hidden md:block"/>
+            experiences that help businesses stand out, <br className = "hidden md:block"/>
             engage customers, and scale faster.
           </p>
         </div>
-        <ul className='flex justify-between items-center'>
+        <ul className='hidden md:block flex justify-between items-center'>
          {businessServices.map((service) => 
          <li 
          key={service.id}
