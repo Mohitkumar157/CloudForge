@@ -94,7 +94,7 @@ function HeroSlides({ children }) {
                 }} ref={circelRef} className='circel w-75 h-75  rounded-full absolute'></div>
             </div>
             <h2
-                className='absolute -bottom-31 left-15
+                className='hidden lg:block absolute -bottom-31 left-15
                  text-[#f1f1f1] font-semibold 
                  text-[220px]! z-40'>
                 Resilience

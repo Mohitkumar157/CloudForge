@@ -9,11 +9,11 @@ function AboutKairo() {
     "Structural design experts",
   ];
     return (
-        <div className='about-kairo'>
+        <section className='about-kairo pb-16 md:pb-20 lg:pb-24'>
             <div className="container">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5 w-full'>
 
-                    <div className='relative left w-full md:min-h-162.5 h-auto rounded-2xl overflow-hidden'>
+                    <div className='relative left w-full aspect-square rounded-2xl overflow-hidden'>
                      <Image
                       src={"/about1.webp"}
                       fill
@@ -22,13 +22,13 @@ function AboutKairo() {
                       />
                     </div>
 
-                    <div className='right w-full flex flex-col justify-center'>
+                    <div className='right w-full flex flex-col justify-between'>
                         <h6 className='flex items-center gap-3 text-[#3D4753] uppercase mb-2'>
                             <span className='inline-block w-2 h-2 rounded-full bg-[#000000]'></span>
-                            about Avorica
+                            about CloudForge
                         </h6>
                         <h2 className='md:text-[40px] font-semibold leading-10 mb-5'>
-                            We are strategic partners <br /> delivering innovation growth
+                            We are strategic partners <br className='hidden lg:block'/> delivering innovation growth
                         </h2>
                         <div className='flex items-center gap-5 font-semibold'>
                             <div>[Market analysis]</div>
@@ -47,9 +47,9 @@ function AboutKairo() {
                             {services.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="relative flex justify-between items-cente w-[60%] py-4 border-b border-gray-400"
+                                    className={`relative flex justify-between items-cente w-full ${index === 0 ? "pb-7" : "py-7"} border-b border-gray-400`}
                                 >
-                                    <div className="flex items-center gap-2 font-semibold">
+                                    <div className="flex text-xl items-center gap-2 font-semibold">
                                         <span>0{index + 1}.</span>
                                         <p>{item}</p>
                                     </div>
@@ -62,7 +62,7 @@ function AboutKairo() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

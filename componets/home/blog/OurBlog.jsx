@@ -33,12 +33,12 @@ function OurBlog() {
             <div className='container'>
                 <h3 className="flex items-center text-[16px]! gap-3 text-[#3D4753] uppercase mb-2">
                     <span className="inline-block w-2 h-2 rounded-full bg-[#000000]"> </span>
-                    about Avorica
+                    about CloudForge
                 </h3>
-                <div className='flex justify-between items-center border-b border-[#0003] pb-10'>
+                <div className='flex flex-col items-start gap-4 md:flex-row justify-between md:items-center border-b border-[#0003] pb-10'>
                     <h2 className='leading-10'>
                         Building smarter solutions for
-                        <br />
+                        <br className='hidden lg:block'/>
                         modern businesses
                     </h2>
                     <PrimaryButton

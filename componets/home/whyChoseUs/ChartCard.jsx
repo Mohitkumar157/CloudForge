@@ -4,8 +4,8 @@ import Card from "./Card";
 function ChartCard() {
   return (
     <Card className=" md:col-span-2">
-      <div className="flex justify-between gap-4  w-full">
-        <div className="left w-[50%] flex flex-col justify-between items-center mb-6">
+      <div className="flex flex-col md:flex-row justify-between md:gap-4  w-full">
+        <div className="left w-full md:w-[50%] flex flex-col justify-between items-center mb-6">
           <div className="flex flex-col gap-5">
             <h3 className="text-xl font-medium">
               Operational efficiency <br /> Streamlined workflow systems
@@ -17,7 +17,7 @@ function ChartCard() {
             </p>
           </div>
 
-          <div className="w-full text-start">
+          <div className="w-full text-start mt-5">
             <PrimaryButton
               ctaText={"get a quote"}
               className={"border! border-[#20324f]! group-hover:bg-[#20324f] group-hover:text-[#f1f1f1]"}
@@ -26,7 +26,7 @@ function ChartCard() {
           </div>
         </div>
 
-        <div className="right w-[50%] flex flex-col gap-3">
+        <div className="right w-full md:w-[50%] flex flex-col gap-3">
           <div className="flex justify-between mb-6">
             <h3>Client project growth</h3>
             <img src="/tripple-dot.svg" alt="tripple dot" loading="lazy" />

@@ -9,6 +9,7 @@ function Hero() {
             </HeroSlides>
             
         </div>
+
     )
 }
 

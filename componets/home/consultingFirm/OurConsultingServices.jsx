@@ -29,9 +29,9 @@ const consultingCardData = [
 function OurConsultingServices() {
     const [activeCard  , setActiveCard] = useState(0);
     return (
-        <section className='py-16'>
+        <section className='py-16 md:py-20 lg:py-24'>
             <h2 className='text-center mb-12 leading-11'>
-                Why leading companies choose our consulting <br /> services worldwide
+                Why leading companies choose our consulting <br className='hidden lg:block'/> services worldwide
             </h2>
             <div className="container">
                 <div 

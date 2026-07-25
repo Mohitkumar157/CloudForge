@@ -7,9 +7,9 @@ function Features() {
     return (
         <div className='flex flex-col justify-between '>
             <div className='top'>
-                <h6 className='flex items-center gap-3 text-[#3D4753] uppercase mb-2'>
+                <h6 className='font-semibold flex items-center gap-3 text-[#3D4753] uppercase mb-2'>
                     <span className='inline-block w-2 h-2 rounded-full bg-[#000000]'></span>
-                    about Avorica
+                    about CloudForge
                 </h6>
                 <h2 className='md:text-[40px] font-semibold leading-10 mb-5'>
                     We are strategic partners delivering growth

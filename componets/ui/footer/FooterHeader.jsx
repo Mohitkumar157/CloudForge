@@ -21,8 +21,8 @@ const socialIcons = [
 ]
 function FooterHeader() {
   return (
-    <div className='flex justify-between items-center pb-12'>
-      <h2 className='uppercase text-[80px]! text-[#f1f1f1]'>CloudForge</h2>
+    <div className='flex flex-col items-start md:flex-row justify-between md:items-center pb-12'>
+      <h2 className='uppercase md:text-[80px]! text-[#f1f1f1]'>CloudForge</h2>
       <div className='flex flex-col gap-4'>
         <div className='flex items-center gap-4'>
           <h3 className='font-bold text-[#f1f1f1]'>

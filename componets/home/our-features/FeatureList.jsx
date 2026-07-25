@@ -14,7 +14,7 @@ function FeatureList() {
         <div className='flex flex-col justify-between gap-12'>
          <ul className='list-none flex flex-col gap-4'>
             {featuresList.map((item , index) =>
-            <li key={index} className='flex items-center gap-2'>
+            <li key={index} className='flex items-center gap-2 font-semibold'>
                 <img 
                 src={logoTik} 
                 alt='logo-tik'/>

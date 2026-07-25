@@ -6,8 +6,8 @@ import ImageCard from './ImageCard';
 import ChartCard from './ChartCard';
 function WhyUs() {
     return (
-        <div className='bg-[#c6bdab] py-16'>
-            <h2 className='text-2xl md:text-[40px] md:mb-8 text-center font-semibold'>
+        <section className='bg-[#c6bdab] py-16 md:py-20 lg:py-24'>
+            <h2 className='text-2xl md:text-[40px] mb-4 md:mb-8 text-center font-semibold'>
                 Why leading companies choose our consulting
             </h2>
             <div className="container">
@@ -38,7 +38,7 @@ function WhyUs() {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

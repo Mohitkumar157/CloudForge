@@ -5,6 +5,13 @@ import Image from 'next/image'
 import Line from './Line'
 import ClientAvatars from '@/componets/ui/ClientAvatars';
 
+const happyClients = [
+    "/happy-client1.webp",
+    "/happy-client2.webp",
+    "/happy-client3.webp",
+    "/happy-client4.webp",
+    "/white-plus-icon.webp"
+]
 
 const slideImages = [
     {
@@ -24,19 +31,19 @@ const slideImages = [
 
 function HeroContent() {
     return (
-        <div className='fixed w-full z-50 top-[20%] left-0 flex justify-center pointer-events-none'>
+        <div className='absolute w-full z-50 bottom-50 md:top-[20%] left-0 flex justify-center pointer-events-none'>
             <div className='container relative flex justify-between '>
                 <div className='md:w-[50%] text-[#f1f1f1]'>
-                    <h1 className='text-6xl w-fit font-semibold'>
+                    <h1 className='text-5xl md:text-6xl w-fit font-semibold'>
                         <div className='flex gap-5 items-end'>
                             <div className='w-fit'>Design</div>
-                             <ClientAvatars />
+                             <ClientAvatars happyClients={happyClients}/>
                         </div>
                         <div>that drives growth</div>
                     </h1>
-                    <p className='font-semibold my-8 w-fit'>
+                    <p className='font-semibold my-4 md:my-8 w-fit'>
                         We create modern, user-focused digital
-                        experiences that help <br /> businesses stand out,
+                        experiences that help <br className='hidden lg:block'/> businesses stand out,
                         engage customers, and scale faster.
                     </p>
 
@@ -62,7 +69,7 @@ function HeroContent() {
                     </div>
                 </div>
 
-                <div className='md:w-[50%] flex justify-end'>
+                <div className='hidden md:block  md:w-[50%] md:flex justify-end'>
                     <div className='w-55 h-auto'>
 
                         <div className=' flex flex-col gap-4 items-end relative'>
