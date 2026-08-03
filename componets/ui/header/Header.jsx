@@ -1,11 +1,14 @@
 "use client";
 import Link from 'next/link';
+
 import React, { useEffect, useState } from 'react'
 import Nav from './Nav';
 import PrimaryButton from '../PrimaryButton';
 import Humburger from './Humburger';
 
 function Header() {
+    
+    
     const [scrollHeight, setScrollHeight] = useState(0);
     const [screenHeight, setScreenHeight] = useState(0)
     useEffect(() => {
@@ -21,7 +24,7 @@ function Header() {
 
     return (
         <>
-            <header className={` ${scrollHeight > screenHeight ? "bg-[#20324f] border-b border-px border-[#8992a2]" : "bg-transparent border-b border-transparent"} transition-colors duration-500 z-10 fixed top-0 left-0 w-full py-3.5 hidden md:block`}>
+            <header className={` ${scrollHeight > screenHeight ? "bg-[#20324f] border-b-[0.2px] border-(--border-bottom)" : "bg-transparent border-b-[0.2px] border-(--border-bottom)"} transition-colors duration-500 z-1000 backdrop-blur-[3px] fixed top-0 left-0 w-full py-3.5 hidden md:block`}>
                
                     <div className="container flex justify-between items-center">
                         <Link href={"/"} className="logo">
@@ -29,6 +32,7 @@ function Header() {
                         </Link>
                         <Nav />
                         <div className="ctc">
+                            
                             <PrimaryButton
                                 ctaText={"Get a quote"}
                                 className="group-hover:bg-[#20324f] 

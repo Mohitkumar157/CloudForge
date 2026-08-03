@@ -167,7 +167,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
                     return (
                         <div
                             key={item.id}
-                            className={`absolute w-[260px] h-[380px] cursor-pointer select-none transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] group ${isActive ? 'pointer-events-auto' : ''
+                            className={`absolute w-65 h-95 cursor-pointer select-none transition-all duration-800 ease-[cubic-bezier(0.25,1,0.5,1)] group ${isActive ? 'pointer-events-auto' : ''
                                 }`}
                             style={{
                                 ...getCardStyle(index),
@@ -177,7 +177,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
                         >
                             {/* Inner Card (Handles Flipping Rotation) */}
                             <div
-                                className="relative w-full h-full rounded-[20px] shadow-[0_15px_35px_rgba(0,0,0,0.3)] transition-transform duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+                                className="relative w-full h-full rounded-[20px] shadow-[0_15px_35px_rgba(0,0,0,0.3)] transition-transform duration-800 ease-in-out"
                                 style={{
                                     transformStyle: 'preserve-3d',
                                     transform: isActive ? 'rotateY(180deg)' : 'rotateY(0deg)'
@@ -195,7 +195,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
                                         className="w-full h-full object-cover block"
                                         loading="lazy"
                                     />
-                                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/10 to-black/40 transition-all duration-500 group-hover:to-black/20" />
+                                    <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-black/10 to-black/40 transition-all duration-500 group-hover:to-black/20" />
                                 </div>
 
                                 {/* Back Side: Details */}
@@ -207,7 +207,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
                                     }}
                                 >
                                     <div>
-                                        <div className="font-mono text-[0.8rem] font-bold text-[#8c96a3] tracking-[1.5px] mb-5 uppercase">
+                                        <div className="font-mono text-[0.8rem] font-semibold text-(--paragraph-secondary) tracking-[1.5px] mb-5 uppercase">
                                             {item.tag}
                                         </div>
                                         <h3 className="text-[1.35rem] text-justify font-semibold leading-normal text-[#1a1e24] m-0">
@@ -233,7 +233,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
             {/* Navigation Controls */}
             <div className="flex items-center gap-5 mt-10">
                 <button
-                    className="bg-white/5 border border-white/10 text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white/20 hover:scale-105"
+                    className="bg-white/5 border border-white/10 text-white w-12.5 h-12.5 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white/20 hover:scale-105"
                     onClick={handlePrevClick}
                     aria-label="Previous slide"
                 >
@@ -255,7 +255,7 @@ export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, 
                 </div>
 
                 <button
-                    className="bg-white/5 border border-white/10 text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white/20 hover:scale-105"
+                    className="bg-white/5 border border-white/10 text-white w-12.5 h-12.5 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white/20 hover:scale-105"
                     onClick={handleNextClick}
                     aria-label="Next slide"
                 >

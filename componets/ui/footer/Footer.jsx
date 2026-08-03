@@ -29,8 +29,14 @@ function Footer() {
                   name='email'
                   className='text-[18px] outline-0 w-full text-white'
                 />
-                <button className='group w-12 h-11 relative flex justify-center items-center overflow-hidden cursor-pointer rounded-full bg-[#f1f1f1]'>
-                  <ArrowUpRight className='w-5 h-5 text-[#303030] absolute group-hover:translate-x-2 group-hover:scale-0 group-hover:-translate-y-3 duration-700' />
+                <button
+                  type="submit"
+                  aria-label="Subscribe to newsletter"
+                  className='group w-12 h-11 relative flex justify-center items-center overflow-hidden cursor-pointer rounded-full bg-[#f1f1f1]'>
+
+                  <ArrowUpRight
+                    className='w-5 h-5 text-[#303030] absolute group-hover:translate-x-2 group-hover:scale-0 group-hover:-translate-y-3 duration-700' />
+
                   <ArrowUpRight
                     className='w-5 h-5 absolute text-[#303030] -translate-x-3 translate-y-7 scale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:scale-100 duration-700'
                   />
@@ -105,4 +111,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

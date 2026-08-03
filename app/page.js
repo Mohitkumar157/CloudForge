@@ -2,13 +2,16 @@ import dynamic from 'next/dynamic';
 
 import Hero from '@/componets/home/hero/Hero';
 const Marquee = dynamic(() => import("@/componets/ui/Marquee"))
-const AboutKairo = dynamic(() => import("@/componets/home/AboutKairo"))
+const AboutKairo = dynamic(() => import("@/componets/home/aboutSection/AboutKairo"))
 const ConsultingFirm = dynamic(() => import("@/componets/home/consultingFirm/ConsultingFirm"));
 const OurFeatures = dynamic(() => import('@/componets/home/our-features/OurFeatures'));
 const OurConsultingServices = dynamic(() => import("@/componets/home/consultingFirm/OurConsultingServices"))
 const WhyUs = dynamic(() => import('@/componets/home/whyChoseUs/WhyUs'))
 const OurBlog = dynamic(() => import("@/componets/home/blog/OurBlog"))
 
+export const metadata = {
+  title: "Home",
+};
 
 
 

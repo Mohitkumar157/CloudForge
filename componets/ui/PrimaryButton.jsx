@@ -10,6 +10,7 @@ function PrimaryButton({ ctaText, className , btnTextClass , circelClass }) {
            gap-6  pl-5 pr-2 rounded-4xl 
             cursor-pointer ${className}`
         }
+        aria-label='discover more'
       >
         <span className={`font-semibold text-[16px] ${btnTextClass}`}>{ctaText}</span>
         <div className='w-8 h-8 rounded-full bg-inherit flex justify-center items-center'>

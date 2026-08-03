@@ -17,7 +17,7 @@ function StrategySection() {
                 <h2 className='leading-12 font-semibold'>
                     Designed to help businesses navigate complexity with confidence and clarity
                 </h2>
-                <div class="flex items-center gap-5 py-6 font-semibold">
+                <div className="flex items-center gap-5 py-6 font-semibold">
                     <div>[Market analysis]</div>
                     <div>[Growth strategy]</div>
                 </div>

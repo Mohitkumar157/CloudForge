@@ -30,7 +30,7 @@ function AnimatedParagraph({ text, className = "" }) {
   return (
     <p
       ref={paraRef}
-      className={`${className} text-(--border-primary)`}>
+      className={`${className} text-(--border-primary) leading-[1.40]`}>
       {words.map((word , i) => (
         <span 
         key={i}

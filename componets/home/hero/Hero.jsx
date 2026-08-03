@@ -1,6 +1,8 @@
+import dynamic from "next/dynamic"
 import HeroContent from "./HeroContent"
-import HeroMobile from "./HeroMobile"
-import HeroSlides from "./HeroSlides"
+const HeroSlides = dynamic(()=> import("./HeroSlides"))
+const HeroMobile = dynamic(()=> import("./HeroMobile"))
+
 
 function Hero() {
     return (

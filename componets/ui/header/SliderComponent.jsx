@@ -4,6 +4,8 @@ import Image from 'next/image'
 import TestimonialSlider from '@/componets/Sliders/TestimonialSlider'
 import { testimonials } from '@/app/data/testimonials';
 function SliderComponent() {
+    console.log("Slider rerender");
+    
     const [activeIndex , setActiveIndex] = useState(0);
     const currentTestimonial = testimonials[activeIndex];
     const [flash , setFlash] = useState(false);

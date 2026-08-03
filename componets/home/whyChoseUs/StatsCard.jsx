@@ -7,7 +7,7 @@ function StatsCard({ label, value, description, img }) {
     <Card className=" flex flex-col ">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex justify-between items-center">
-          <p className="uppercase text-xs text-gray-500">{label}</p>
+          <p className="uppercase text-xs font-semibold text-(--subheading-primary)">{label}</p>
           {img && <img src={img} alt="icon" loading="lazy" />}
         </div>
         <div className="w-full h-px bg-gray-500"></div>
@@ -20,7 +20,7 @@ function StatsCard({ label, value, description, img }) {
               {dig}
             </div>)}
           </h2>
-          <p className=" text-gray-500">{description}</p>
+          <p className=" text-(--subheading-primary)">{description}</p>
         </div>
       </div>
 

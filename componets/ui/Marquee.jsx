@@ -5,8 +5,6 @@ import React from 'react'
 
 
 function Marquee({ imageArray }) {
-  console.log(imageArray);
-
   return (
     <section className='relative group1 test overflow-hidden '>
 

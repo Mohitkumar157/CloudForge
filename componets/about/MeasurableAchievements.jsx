@@ -18,4 +18,4 @@ function MeasurableAchievements() {
   )
 }
 
-export default MeasurableAchievements
+export default MeasurableAchievements;

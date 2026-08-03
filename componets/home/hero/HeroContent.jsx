@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Line from './Line'
 import ClientAvatars from '@/componets/ui/ClientAvatars';
-
+import { useTranslations } from 'next-intl';
 const happyClients = [
     "/happy-client1.webp",
     "/happy-client2.webp",
@@ -30,16 +30,17 @@ const slideImages = [
 
 
 function HeroContent() {
+    const t = useTranslations("HomePage");
     return (
         <div className='absolute w-full z-50 bottom-50 md:top-[20%] left-0 flex justify-center pointer-events-none'>
             <div className='container relative flex justify-between '>
                 <div className='md:w-[50%] text-[#f1f1f1]'>
                     <h1 className='text-5xl md:text-6xl w-fit font-semibold'>
                         <div className='flex gap-5 items-end'>
-                            <div className='w-fit'>Design</div>
+                            <div className='w-fit'>{t("title1")}</div>
                              <ClientAvatars happyClients={happyClients}/>
                         </div>
-                        <div>that drives growth</div>
+                        <div>{t("title2")}</div>
                     </h1>
                     <p className='font-semibold my-4 md:my-8 w-fit'>
                         We create modern, user-focused digital

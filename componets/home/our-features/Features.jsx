@@ -1,5 +1,6 @@
 import PrimaryButton from '@/componets/ui/PrimaryButton';
 import ClientAvatars from '@/componets/ui/ClientAvatars';
+import SubHeading from '@/componets/ui/SubHeading';
 
 
 
@@ -7,10 +8,9 @@ function Features() {
     return (
         <div className='flex flex-col justify-between '>
             <div className='top'>
-                <h6 className='font-semibold flex items-center gap-3 text-[#3D4753] uppercase mb-2'>
-                    <span className='inline-block w-2 h-2 rounded-full bg-[#000000]'></span>
-                    about CloudForge
-                </h6>
+                <SubHeading
+                headingText={'about CloudForge'}
+                 />
                 <h2 className='md:text-[40px] font-semibold leading-10 mb-5'>
                     We are strategic partners delivering growth
                 </h2>

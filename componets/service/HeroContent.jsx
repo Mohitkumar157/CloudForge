@@ -58,7 +58,8 @@ function HeroContent() {
             engage customers, and scale faster.
           </p>
         </div>
-        <ul className='hidden md:block flex justify-between items-center'>
+        <div className='hidden md:block'>
+          <ul className='flex justify-between items-center'>
          {businessServices.map((service) => 
          <li 
          key={service.id}
@@ -70,6 +71,7 @@ function HeroContent() {
           </li>
         )}
         </ul>
+        </div>
       </div>
     </div>
   )

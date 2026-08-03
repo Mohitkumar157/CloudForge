@@ -65,13 +65,17 @@ export default function TestimonialSlider({setActiveIndex , handlerSlideChange})
 
       <div className="flex gap-6 justify-end pt-8 border-t border-(--border-secondary)">
         <div className='group'>
-          <button className="group-hover:bg-[#59624d] transition-bg-color duration-300 prev-btn cursor-pointer w-10 h-10 border border-(--border-secondary) rounded-full flex justify-center items-center">
+          <button 
+          aria-label="Previous slide"
+          className="group-hover:bg-[#59624d] transition-bg-color duration-300 prev-btn cursor-pointer w-10 h-10 border border-(--border-secondary) rounded-full flex justify-center items-center">
           <ArrowLeft className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
         </button>
         </div>
 
         <div className='group'>
-          <button className="group-hover:bg-[#59624d] transition-bg-color duration-300 next-btn cursor-pointer w-10 h-10 rounded-full border border-(--border-secondary) flex justify-center items-center">
+          <button 
+          aria-label="Next slide"
+          className="group-hover:bg-[#59624d] transition-bg-color duration-300 next-btn cursor-pointer w-10 h-10 rounded-full border border-(--border-secondary) flex justify-center items-center">
           <ArrowRight className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
         </button>
         </div>

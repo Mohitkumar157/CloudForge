@@ -2,7 +2,6 @@ import React from 'react'
 import FeatureCard from './ourFeatures/FeatureCard'
 import SubHeading from '../ui/SubHeading'
 import Image from 'next/image'
-import PrimaryButton from '../ui/PrimaryButton'
 import ClientAvatars from '../ui/ClientAvatars'
 import ServicesSection from '../ui/ServicesSection'
 import ServiceItem from '../ui/ServiceItem'
@@ -51,6 +50,7 @@ function OurFeatures() {
                 <Image
                   src={"/about/features-image-1.webp"}
                   alt='features image'
+                  sizes="(max-width: 768px) 100vw, 380px"
                   fill
                   className='object-cover object-center'
                 />
@@ -127,14 +127,14 @@ function OurFeatures() {
 
               <div className='mt-12'>
                 <ServicesSection>
-                {services.map((item) => (
-                  <ServiceItem
-                    item={item.title}
-                    index={item.number}
-                    key={item.number}
-                  />
-                ))}
-              </ServicesSection>
+                  {services.map((item) => (
+                    <ServiceItem
+                      item={item.title}
+                      index={item.number}
+                      key={item.number}
+                    />
+                  ))}
+                </ServicesSection>
               </div>
 
             </div>

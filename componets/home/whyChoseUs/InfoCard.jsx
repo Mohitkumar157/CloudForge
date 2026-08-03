@@ -7,7 +7,7 @@ function InfoCard({ title, subtitle, description }) {
             <div className="">
                 <h3 className="text-xl font-medium">{title}</h3>
                 <h4 className="text-lg mb-4">{subtitle}</h4>
-                <p className="text-gray-500 leading-relaxed">
+                <p className="text-(--paragraph-secondary) leading-relaxed">
                     {description}
                 </p>
             </div>
