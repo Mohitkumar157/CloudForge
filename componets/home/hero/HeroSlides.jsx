@@ -57,6 +57,12 @@ function HeroSlides({ children }) {
         yTo.current = gsap.quickTo(circelRef.current, "y", {
             duration: 0.5,
         });
+         gsap.from('[data-animate="bottom-text"]', {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                ease: "power4.out",
+            });
 
         return (()=>{
             tl.kill();
@@ -96,6 +102,7 @@ function HeroSlides({ children }) {
                 </div>
             </div>
             <h2
+                data-animate="bottom-text"
                 className='hidden lg:block absolute -bottom-31 left-15
                  text-[#f1f1f1] font-semibold 
                  text-[220px]! z-40'>

@@ -4,7 +4,7 @@ import PrimaryButton from "@/componets/ui/PrimaryButton";
 
 function ImageCard() {
   return (
-    <Card className="relative overflow-hidden p-0 min-h-72.5">
+    <Card className="relative overflow-hidden p-0 min-h-72.5 h-full">
       <Image
         src="/brown-girl.webp"
         alt="brown-girl"

@@ -24,7 +24,7 @@ function AboutContent() {
 
 
         const mm = gsap.matchMedia();
-
+            // Mobile Animation
         mm.add("(max-width: 767px)", () => {
             const scroller = {
                 start: "top 60%",
@@ -62,7 +62,7 @@ function AboutContent() {
                 y: 100,
                 opacity: 0,
                 duration: 0.9,
-                stagger: 0.15,
+                stagger: 0.1,
                 ease: "power4.out",
                 scrollTrigger: {
                     start: "top 10%",
@@ -96,7 +96,7 @@ function AboutContent() {
 
 
             gsap.from(headingRef.current, {
-                y: 100,
+                y: 150,
                 duration: .9,
                 ease: "power4.out",
                 scrollTrigger: scroller
@@ -120,7 +120,7 @@ function AboutContent() {
                 y: 100,
                 opacity: 0,
                 duration: 0.6,
-                stagger: 0.45,
+                stagger: 0.1,
                 ease: "power4.out",
                 scrollTrigger: {
                     start: "top 10%",
@@ -128,21 +128,6 @@ function AboutContent() {
                 }
             });
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }, { scope: sectionRef.current });
 

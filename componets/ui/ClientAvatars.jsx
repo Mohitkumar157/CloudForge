@@ -1,14 +1,30 @@
+'use client';
 import React from 'react'
+import { gsap, ScrollTrigger, useGSAP } from "../../app/lib/gsap";
+import { useRef } from 'react';
+function ClientAvatars({happyClients , animationStart = ""}) {
+    const sectionRef = useRef();
+    useGSAP(()=>{
+        gsap.from('[data-animate="icon"]', {
+                x: -250,
+                opacity: 0,
+                duration: 0.9,
+                stagger: 0.1,
+                ease: "power4.out",
+                
+            });
+            
+            
+    },{scope : sectionRef})
 
 
-function ClientAvatars({happyClients}) {
     return (
-        <div className='flex items-center justify-start' >
+        <div ref={sectionRef}  className='happy-client overflow-hidden flex items-center justify-start' >
             {
                 happyClients?.map((clientPhoto, index) =>
                     <img
                         src={clientPhoto}
-                        alt="happy-client"
+                        alt="happy-client-image"
                         width={50}
                         height={50}
                         key={index}
@@ -16,6 +32,7 @@ function ClientAvatars({happyClients}) {
                         style={{
                             left: `${index * -12}px`,
                         }}
+                        data-animate="icon"
                     />
                 )
             }

@@ -4,7 +4,7 @@ function StatsCard({ label, value, description, img }) {
   console.log(value.split(""));
 
   return (
-    <Card className=" flex flex-col ">
+    <Card className=" flex flex-col h-full">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex justify-between items-center">
           <p className="uppercase text-xs font-semibold text-(--subheading-primary)">{label}</p>

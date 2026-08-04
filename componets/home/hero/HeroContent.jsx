@@ -38,7 +38,7 @@ function HeroContent() {
                     <h1 className='text-5xl md:text-6xl w-fit font-semibold'>
                         <div className='flex gap-5 items-end'>
                             <div className='w-fit'>{t("title1")}</div>
-                             <ClientAvatars happyClients={happyClients}/>
+                             <ClientAvatars animationStart="top 0%" happyClients={happyClients}/>
                         </div>
                         <div>{t("title2")}</div>
                     </h1>
