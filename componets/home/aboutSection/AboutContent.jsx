@@ -169,7 +169,7 @@ function AboutContent() {
                 {services.map((item, index) => (
                     <div key={index} className="overflow-y-hidden">
                         <div data-animate="list"
-                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-5 md:pb-7" : "py-5 md:py-7"} border-b border-gray-400`}
+                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}
                         >
                             <div className="flex text-xl items-center gap-2 font-semibold">
                                 <span>0{index + 1}.</span>
@@ -186,4 +186,4 @@ function AboutContent() {
     )
 }
 
-export default AboutContent
+export default AboutContent;
