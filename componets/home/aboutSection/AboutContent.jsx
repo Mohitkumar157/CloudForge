@@ -21,118 +21,180 @@ function AboutContent() {
     console.log("REFS", subHeadingRef.current, headingRef.current);
 
     useGSAP(() => {
-
-
         const mm = gsap.matchMedia();
-            // Mobile Animation
+
+        const tags = sectionRef.current.querySelectorAll('[data-animate="tags"]');
+        const lists = sectionRef.current.querySelectorAll('[data-animate="list"]');
+        const button = sectionRef.current.querySelector('[data-animate="button"]');
+
+        // -------------------- MOBILE --------------------
         mm.add("(max-width: 767px)", () => {
-            const scroller = {
-                start: "top 60%",
-                trigger: sectionRef.current,
-                invalidateOnRefresh: true,
-                
-            }
-            gsap.from(subHeadingRef.current, {
-                y: 100,
-                duration: .9,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            })
-            gsap.from(headingRef.current, {
-                y: 100,
-                duration: 1,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            })
-            gsap.from('[data-animate="tags"]', {
-                y: 100,
-                duration: 1,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            })
-            gsap.from('[data-animate="button"]', {
-                y: 100,
-                duration: .9,
-                ease: "power4.out",
-                scrollTrigger: {
-                    start: "top 30%",
-                    trigger: sectionRef.current,
-                    invalidateOnRefresh: true,
-                }
-            })
-             gsap.from('[data-animate="list"]', {
-                y: 100,
-                opacity: 0,
-                duration: 0.9,
-                stagger: 0.1,
-                ease: "power4.out",
-                scrollTrigger: {
-                    start: "top 10%",
-                    trigger: sectionRef.current,
-                    invalidateOnRefresh: true,
-                }
-            });
 
-
-        });
-
-
-
-
-
-        //  Desktop animation
-
-        mm.add("(min-width: 768px)", () => {
-
-            const scroller = {
-                start: "top 50%",
-                trigger: sectionRef.current,
-            }
-
-            gsap.from(subHeadingRef.current, {
-                y: 100,
-                duration: .9,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            })
-
-
-
-            gsap.from(headingRef.current, {
-                y: 150,
-                duration: .9,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            })
-            gsap.from('[data-animate="tags"]', {
-                y: 100,
-                duration: .9,
-                ease: "power4.out",
-                scrollTrigger: scroller
-            }),
-                gsap.from('[data-animate="button"]', {
-                    y: 100,
-                    duration: .9,
+            gsap.fromTo(
+                subHeadingRef.current,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.9,
                     ease: "power4.out",
                     scrollTrigger: {
-                        start: "top 40%",
-                        trigger: sectionRef.current
+                        trigger: subHeadingRef.current,
+                        start: "top 85%",
+                        invalidateOnRefresh: true,
                     }
-                })
-            gsap.from('[data-animate="list"]', {
-                y: 100,
-                opacity: 0,
-                duration: 0.6,
-                stagger: 0.1,
-                ease: "power4.out",
-                scrollTrigger: {
-                    start: "top 10%",
-                    trigger: sectionRef.current,
                 }
+            );
+
+            gsap.fromTo(
+                headingRef.current,
+                { y: 120, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: headingRef.current,
+                        start: "top 85%",
+                        invalidateOnRefresh: true,
+                    }
+                }
+            );
+
+            gsap.fromTo(
+                tags,
+                { y: 80, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.12,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: tags[0],
+                        start: "top 90%",
+                        invalidateOnRefresh: true,
+                    }
+                }
+            );
+
+            gsap.fromTo(
+                button,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.9,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: button,
+                        start: "top 90%",
+                        invalidateOnRefresh: true,
+                    }
+                }
+            );
+
+            lists.forEach((item) => {
+                gsap.fromTo(
+                    item,
+                    { y: 100, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.8,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 90%",
+                            invalidateOnRefresh: true,
+                        }
+                    }
+                );
             });
         });
 
-    }, { scope: sectionRef.current });
+        // -------------------- DESKTOP --------------------
+        mm.add("(min-width: 768px)", () => {
+
+            const commonTrigger = {
+                trigger: sectionRef.current,
+                start: "top 55%",
+                invalidateOnRefresh: true,
+            };
+
+            gsap.fromTo(
+                subHeadingRef.current,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.9,
+                    ease: "power4.out",
+                    scrollTrigger: commonTrigger,
+                }
+            );
+
+            gsap.fromTo(
+                headingRef.current,
+                { y: 120, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power4.out",
+                    scrollTrigger: commonTrigger,
+                }
+            );
+
+            gsap.fromTo(
+                tags,
+                { y: 80, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.12,
+                    ease: "power4.out",
+                    scrollTrigger: commonTrigger,
+                }
+            );
+
+            gsap.fromTo(
+                button,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.9,
+                    ease: "power4.out",
+                    scrollTrigger: commonTrigger,
+                }
+            );
+
+            gsap.fromTo(
+                lists,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.12,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top 30%",
+                        invalidateOnRefresh: true,
+                    }
+                }
+            );
+        });
+
+        ScrollTrigger.refresh();
+
+        return () => mm.revert();
+
+    }, { scope: sectionRef });
 
 
 
@@ -167,9 +229,9 @@ function AboutContent() {
 
             <div className="">
                 {services.map((item, index) => (
-                    <div key={index} className="overflow-y-hidden">
+                    <div key={index} className={`overflow-hidden ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}>
                         <div data-animate="list"
-                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}
+                            className={`relative cursor-pointer group flex justify-between items-cente w-full`}
                         >
                             <div className="flex text-xl items-center gap-2 font-semibold">
                                 <span>0{index + 1}.</span>
