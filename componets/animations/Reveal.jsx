@@ -25,6 +25,7 @@ function Reveal({ children }) {
                     scrollTrigger: {
                         trigger: card,
                         start: "top 70%",
+                        invalidateOnRefresh: true,
                         toggleActions: "play none none none",
                     },
                 });
@@ -51,7 +52,7 @@ function Reveal({ children }) {
                 scrollTrigger: {
                     trigger: card,
                     start: "top 70%",
-                   
+                    invalidateOnRefresh: true,
                 },
 
             })

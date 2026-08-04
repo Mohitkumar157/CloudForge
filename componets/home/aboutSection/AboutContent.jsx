@@ -29,6 +29,7 @@ function AboutContent() {
             const scroller = {
                 start: "top 60%",
                 trigger: sectionRef.current,
+                invalidateOnRefresh: true,
                 
             }
             gsap.from(subHeadingRef.current, {
@@ -56,6 +57,7 @@ function AboutContent() {
                 scrollTrigger: {
                     start: "top 30%",
                     trigger: sectionRef.current,
+                    invalidateOnRefresh: true,
                 }
             })
              gsap.from('[data-animate="list"]', {
@@ -67,6 +69,7 @@ function AboutContent() {
                 scrollTrigger: {
                     start: "top 10%",
                     trigger: sectionRef.current,
+                    invalidateOnRefresh: true,
                 }
             });
 
