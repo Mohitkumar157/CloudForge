@@ -28,7 +28,7 @@ function Reveal({ children }) {
                     ease: "power4.out",
                     scrollTrigger: {
                         trigger: card,
-                        start: config.mobileStart ?? "top 70%",
+                        start: config.mobileStart ?? "top 80%",
                         invalidateOnRefresh: true,
                         toggleActions: "play none none none",
                     },
