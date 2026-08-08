@@ -1,8 +1,8 @@
 
-function SecondHeading({ children, className ,  ref = null }) {
+function SecondHeading({ children, className = "" ,  ref = null }) {
     return (
-        <div className="overflow-hidden mb-4 md:mb-8">
-            <h2 ref={ref} className={`text-[28px]! md:text-[40px] leading-[1.08] font-semibold ${className}`}>
+        <div data-animate="fade-up" className="overflow-hidden py-2">
+            <h2 ref={ref} className={`text-[28px] md:text-[40px] leading-[1.15] font-normal ${className}`}>
                 {children}
             </h2>
         </div>

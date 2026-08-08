@@ -2,11 +2,19 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
+import SecondHeading from './SecondHeading';
 
 
 function Marquee({ imageArray }) {
   return (
     <section className='relative group1 test overflow-hidden '>
+
+
+            <div className='mb-4 md:mb-6 overflow-hidden'>
+              <SecondHeading className='text-center'>
+                Strategic services that power modern businesses
+              </SecondHeading>
+            </div>
 
       <div className='flex animate-marquee hover:[animation-play-state:paused]!
        justify-start w-max items-center gap-6'>

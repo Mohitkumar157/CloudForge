@@ -18,7 +18,7 @@ function AboutContent() {
     const sectionRef = useRef();
     const subHeadingRef = useRef();
     const headingRef = useRef();
-    console.log("REFS", subHeadingRef.current, headingRef.current);
+    const listRef = useRef();
 
     useGSAP(() => {
         const mm = gsap.matchMedia();
@@ -26,7 +26,7 @@ function AboutContent() {
         const tags = sectionRef.current.querySelectorAll('[data-animate="tags"]');
         const lists = sectionRef.current.querySelectorAll('[data-animate="list"]');
         const button = sectionRef.current.querySelector('[data-animate="button"]');
-
+        
         // -------------------- MOBILE --------------------
         mm.add("(max-width: 767px)", () => {
 
@@ -103,10 +103,11 @@ function AboutContent() {
                         y: 0,
                         opacity: 1,
                         duration: 0.8,
+                        stagger : 0.10,
                         ease: "power4.out",
                         scrollTrigger: {
-                            trigger: item,
-                            start: "top 90%",
+                            trigger: listRef.current,
+                            start: "top 60%",
                             invalidateOnRefresh: true,
                         }
                     }
@@ -172,9 +173,9 @@ function AboutContent() {
                 }
             );
 
-            gsap.fromTo(
-                lists,
-                { y: 100, opacity: 0 },
+            lists.forEach((item)=>{
+                gsap.fromTo(item,
+                    { y: 100, opacity: 0 },
                 {
                     y: 0,
                     opacity: 1,
@@ -182,12 +183,13 @@ function AboutContent() {
                     stagger: 0.12,
                     ease: "power4.out",
                     scrollTrigger: {
-                        trigger: sectionRef.current,
-                        start: "top 30%",
+                        trigger: listRef.current,
+                        start: "top 60%",
                         invalidateOnRefresh: true,
                     }
                 }
             );
+            })
         });
 
         ScrollTrigger.refresh();
@@ -214,7 +216,7 @@ function AboutContent() {
                 <div data-animate="tags">[Market analysis]</div>
                 <div data-animate="tags">[Growth strategy]</div>
             </div>
-            <div className='md:py-16 py-6 overflow-y-hidden'>
+            <div className='md:py-10 lg:py-14 py-6 overflow-y-hidden'>
                 <div className="overflow-y-hidden">
                     <div data-animate="button">
                         <PrimaryButton
@@ -227,11 +229,11 @@ function AboutContent() {
                 </div>
             </div>
 
-            <div className="">
+            <div ref={listRef}>
                 {services.map((item, index) => (
-                    <div key={index} className={`overflow-hidden ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}>
+                    <div key={index} className={`about-list overflow-hidden `}>
                         <div data-animate="list"
-                            className={`relative cursor-pointer group flex justify-between items-cente w-full`}
+                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}
                         >
                             <div className="flex text-xl items-center gap-2 font-semibold">
                                 <span>0{index + 1}.</span>

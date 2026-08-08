@@ -2,29 +2,33 @@
 import React, { useRef } from 'react'
 import { gsap, ScrollTrigger, useGSAP } from "../../app/lib/gsap";
 
+
+import animations from './animations';
+
+
 function Reveal({ children }) {
     const wrapperRef = useRef();
-
     useGSAP(() => {
 
-
         const mm = gsap.matchMedia();
+
 
         // Mobile Animation
         mm.add("(max-width: 767px)", () => {
 
-            const cards = gsap.utils.toArray('[data-animate="scale-in"]');
-
+            const cards = wrapperRef.current.querySelectorAll("[data-animate]");
+            
             cards.forEach((card) => {
+
+                const config = animations[card.dataset.animate]
+                if (!config) return;
                 gsap.from(card, {
-                    scale: 0.25,
-                    y : 80,
-                    opacity: 0,
-                    duration: 1,
+                    ...config.from,
+                    duration: config.duration ?? 1,
                     ease: "power4.out",
                     scrollTrigger: {
                         trigger: card,
-                        start: "top 70%",
+                        start: config.mobileStart ?? "top 70%",
                         invalidateOnRefresh: true,
                         toggleActions: "play none none none",
                     },
@@ -35,40 +39,39 @@ function Reveal({ children }) {
         });
 
 
-
-
-
         //  Desktop animation
 
         mm.add("(min-width: 768px)", () => {
-             const cards = gsap.utils.toArray('[data-animate="scale-in"]');
-             cards.forEach((card)=>{
-                gsap.from(card, {
-                scale: 0.25,
-                y: 80,
-                opacity: 0,
-                duration: 1,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top 70%",
-                    invalidateOnRefresh: true,
-                },
-
-            })
-             })
-
-
-
+            const cards = wrapperRef.current.querySelectorAll("[data-animate]");
+            console.log("Cards",cards);
+            
            
+            cards.forEach((card) => {
+                const config = animations[card.dataset.animate]
+                if (!config) return;
+                gsap.from(card, {
+                    ...config.from,
+                    duration: config.duration ?? 1,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: card,
+                        start: config.desktopStart ?? "top 75%",
+                        invalidateOnRefresh: true,
+                    },
 
+                })
+            })
         });
 
 
+        requestAnimationFrame(() => {
+            ScrollTrigger.refresh();
+        });
+
+        return () => mm.revert();
 
 
-
-    }, { scope: wrapperRef.current })
+    }, { scope: wrapperRef })
     return (
         <section ref={wrapperRef}>
             {children}

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react'
 import ConsultingCard from "../consultingFirm/ConsultingCard";
-
+import SecondHeading from '@/componets/ui/SecondHeading';
+import Reveal from '@/componets/animations/Reveal';
 const consultingCardData = [
     {
         heading: "100%",
@@ -27,26 +28,38 @@ const consultingCardData = [
 
 
 function OurConsultingServices() {
-    const [activeCard  , setActiveCard] = useState(0);
+    const [activeCard, setActiveCard] = useState(0);
     return (
         <section className='py-16 md:py-20 lg:py-24'>
-            <h2 className='text-center mb-12 leading-11'>
-                Why leading companies choose our consulting <br className='hidden lg:block'/> services worldwide
-            </h2>
+
             <div className="container">
-                <div 
-                className='grid grid-cols-1 gap-4 md:gap-0 lg:gap-0 md:grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden'
-                >
-                    {
-                        consultingCardData.map((cardData, index) => 
-                        <ConsultingCard 
-                        activeCard={activeCard}
-                        setActiveCard={setActiveCard}
-                        key={index} 
-                        data={cardData} 
-                        index={index} />)
-                    }
-                </div>
+                <Reveal>
+                    <div className='mb-4 md:mb-6 overflow-hidden'>
+                        <SecondHeading className='text-center'>
+                            Why leading companies choose our consulting
+                            <br className='hidden lg:block' />
+                            services worldwide
+                        </SecondHeading>
+                    </div>
+                    <div data-animate="fade-up" className='grid grid-cols-1 gap-4 md:gap-0 lg:gap-0 md:grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden'>
+                        {
+                            consultingCardData.map((cardData, index) =>
+                                <div key={index} className='overflow-hidden'>
+                                    <ConsultingCard
+                                        activeCard={activeCard}
+                                        setActiveCard={setActiveCard}
+                                        data={cardData}
+                                        index={index}
+                                    />
+                                </div>
+
+                            )
+                        }
+                    </div>
+
+
+                </Reveal>
+
             </div>
         </section>
     )
