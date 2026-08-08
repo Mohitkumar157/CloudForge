@@ -30,6 +30,7 @@ function Reveal({ children }) {
                         trigger: card,
                         start: config.mobileStart ?? "top 80%",
                         invalidateOnRefresh: true,
+                        markers : true,
                         toggleActions: "play none none none",
                     },
                 });
