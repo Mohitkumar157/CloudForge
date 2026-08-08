@@ -5,6 +5,7 @@ import ImageCard from './ImageCard';
 import ChartCard from './ChartCard';
 import SecondHeading from '@/componets/ui/SecondHeading';
 import Reveal from '@/componets/animations/Reveal';
+import Odometer from '@/componets/ui/Odometer';
 function WhyUs() {
     return (
         <section className='bg-[#c6bdab] py-16 md:py-20 lg:py-24'>
@@ -34,7 +35,17 @@ function WhyUs() {
                                 value="80%"
                                 img={"/icon.svg"}
                                 description="Revenue growth achieved by our clients within the first twelve months of partnership."
-                            />
+                            >
+
+                                <Odometer
+                                    value={89}
+                                    suffix="%"
+                                    duration={4}
+                                    loops={1}
+                                    className="text-8xl font-bold"
+                                />
+
+                            </StatsCard>
                         </div>
 
                         <div data-animate="scale-in">
@@ -51,7 +62,17 @@ function WhyUs() {
                                 value="98%"
                                 img={"/icon-2.svg"}
                                 description="Client retention rate due to our hands-on approach and measurable impact on financial results."
-                            />
+                            >
+
+                                <Odometer
+                                    value={90}
+                                    suffix="%"
+                                    duration={4}
+                                    loops={1}
+                                    className="text-8xl font-bold"
+                                />
+
+                            </StatsCard>
                         </div>
 
                     </div>

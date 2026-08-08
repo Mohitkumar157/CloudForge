@@ -17,7 +17,7 @@ function Reveal({ children }) {
         mm.add("(max-width: 767px)", () => {
 
             const cards = wrapperRef.current.querySelectorAll("[data-animate]");
-            
+
             cards.forEach((card) => {
 
                 const config = animations[card.dataset.animate]
@@ -30,8 +30,18 @@ function Reveal({ children }) {
                         trigger: card,
                         start: config.mobileStart ?? "top 80%",
                         invalidateOnRefresh: true,
-                        markers : true,
                         toggleActions: "play none none none",
+                        invalidateOnRefresh: true,
+                        onEnter: () => {
+                            const odometers = card.querySelectorAll("[data-odometer]");
+                            console.log("ODODMETER", odometers);
+
+                            odometers.forEach((odometer) => {
+                                odometer.dispatchEvent(
+                                    new CustomEvent("odometer-start")
+                                );
+                            });
+                        },
                     },
                 });
             });
@@ -44,9 +54,9 @@ function Reveal({ children }) {
 
         mm.add("(min-width: 768px)", () => {
             const cards = wrapperRef.current.querySelectorAll("[data-animate]");
-            console.log("Cards",cards);
-            
-           
+            console.log("Cards", cards);
+
+
             cards.forEach((card) => {
                 const config = animations[card.dataset.animate]
                 if (!config) return;
@@ -58,6 +68,16 @@ function Reveal({ children }) {
                         trigger: card,
                         start: config.desktopStart ?? "top 75%",
                         invalidateOnRefresh: true,
+                        onEnter: () => {
+                            const odometers = card.querySelectorAll("[data-odometer]");
+                            console.log("ODODMETER", odometers);
+
+                            odometers.forEach((odometer) => {
+                                odometer.dispatchEvent(
+                                    new CustomEvent("odometer-start")
+                                );
+                            });
+                        },
                     },
 
                 })
@@ -80,4 +100,4 @@ function Reveal({ children }) {
     )
 }
 
-export default Reveal
+export default Reveal;

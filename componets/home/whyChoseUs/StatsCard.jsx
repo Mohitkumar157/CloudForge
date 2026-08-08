@@ -1,7 +1,7 @@
 import Card from "./Card";
 
-function StatsCard({ label, value, description, img }) {
-  console.log(value.split(""));
+function StatsCard({ label, description, img , children }) {
+ 
 
   return (
     <Card className=" flex flex-col h-full">
@@ -12,14 +12,10 @@ function StatsCard({ label, value, description, img }) {
         </div>
         <div className="w-full h-px bg-gray-500"></div>
         <div className="flex flex-col gap-4">
-          <h2 className="flex text-7xl font-semibold">{value.split("").map((dig, index) =>
-            <div 
-            className="text-[120px]"
-            key={index}
-            >
-              {dig}
-            </div>)}
-          </h2>
+          
+           {children}
+          
+         
           <p className=" text-(--subheading-primary)">{description}</p>
         </div>
       </div>
