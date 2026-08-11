@@ -3,45 +3,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import PrimaryButton from '../ui/PrimaryButton';
 
-const DEFAULT_ITEMS = [
-    {
-        id: 1,
-        tag: '[01] CASE SPOTLIGHT',
-        title: 'Enterprise digital transformation, retail operational excellence',
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
-        buttonText: 'Discover more'
-    },
-    {
-        id: 2,
-        tag: '[02] CASE SPOTLIGHT',
-        title: 'Boosting performance using very advanced analytics insights',
-        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop',
-        buttonText: 'Discover more'
-    },
-    {
-        id: 3,
-        tag: '[03] CASE SPOTLIGHT',
-        title: 'Enterprise digital transformation, retail operational excellence',
-        image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
-        buttonText: 'Discover more'
-    },
-    {
-        id: 4,
-        tag: '[04] CASE SPOTLIGHT',
-        title: "Boosting performance using very advanced analytics insights",
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop',
-        buttonText: 'Discover more'
-    },
-    {
-        id: 5,
-        tag: '[05] CASE SPOTLIGHT',
-        title: 'Creating lasting value in communities worldwide',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop',
-        buttonText: 'Discover more'
-    }
-];
 
-export default function FlipperSlider({ items = DEFAULT_ITEMS, autoPlay = true, autoPlayInterval = 5000 }) {
+
+export default function FlipperSlider({ items , autoPlay = true, autoPlayInterval = 5000 }) {
     const [activeIndex, setActiveIndex] = useState(2); // Start with center item
     const timerRef = useRef(null);
 

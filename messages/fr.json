@@ -1,0 +1,671 @@
+{
+  "Header": {
+    "getQuote": "Obtenir un devis",
+    "Navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  }
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title1": "Design",
+      "title2": "qui stimule la croissance",
+      "description": "Nous créons des expériences numériques modernes et centrées sur l'utilisateur qui aident les entreprises à se démarquer, à engager leurs clients et à accélérer leur croissance.",
+      "cta": "Parlons-en",
+      "experience": {
+        "years": "25+",
+        "label": "Années d'expérience professionnelle"
+      },
+      "reviews": {
+        "rating": "98%",
+        "label": "Noté 4,9/5 sur plus de 1 200 avis"
+      },
+      "bottomText": "Résilience"
+    },
+    "ConsultingSection": {
+      "description": "Nous sommes un cabinet de conseil qui transforme les idées en écosystèmes de marché. Fondés sur les données et guidés par l'analyse, nous associons stratégie et efficacité pour concevoir des entreprises performantes, évolutives et durables."
+    },
+    "AboutCloudForgeSection": {
+      "subHeading": "à propos de CloudForge",
+      "title1": "Nous sommes des partenaires stratégiques",
+      "title2": "qui stimulent l'innovation et la croissance",
+      "tags": [
+        "Analyse de marché",
+        "Stratégie de croissance"
+      ],
+      "cta": "Obtenir un devis",
+      "services": [
+        "Stratégie d'expansion du marché",
+        "Services de gestion de projet",
+        "Experts en conception structurelle"
+      ]
+    },
+    "WhyUsSection": {
+      "title": "Pourquoi les entreprises leaders choisissent notre conseil",
+      "strategicGrowth": {
+        "title": "Partenaire de croissance stratégique, succès axé sur les résultats",
+        "subtitle": "",
+        "description": "Leur équipe a fourni des stratégies à fort impact qui ont contribué à augmenter nos revenus, à optimiser nos opérations et à créer une valeur durable à long terme."
+      },
+      "provenOutcomes": {
+        "label": "Résultats éprouvés",
+        "value": "80%",
+        "description": "Croissance des revenus obtenue par nos clients au cours des douze premiers mois de notre partenariat."
+      },
+      "imageCard": {
+        "description": "Nous fournissons des conseils d'affaires experts qui aident les dirigeants à se développer.",
+        "cta": "Obtenir un devis"
+      },
+      "chartCard": {
+        "title": "Efficacité opérationnelle",
+        "subtitle": "Systèmes de flux de travail optimisés",
+        "description": "Nous identifions les goulots d'étranglement cachés de votre organisation afin d'améliorer la production, de réduire vos frais généraux et de maximiser la productivité interne de votre équipe.",
+        "cta": "Obtenir un devis",
+        "growthTitle": "Croissance des projets clients"
+      },
+      "targetedGrowth": {
+        "label": "Croissance ciblée",
+        "value": "98%",
+        "description": "Taux de fidélisation des clients grâce à notre approche concrète et à notre impact mesurable sur les résultats financiers."
+      }
+    },
+    "FeaturesSection": {
+      "subHeading": "nos fonctionnalités",
+      "title": "Nous sommes des partenaires stratégiques qui favorisent la croissance",
+      "tags": [
+        "Analyse de marché",
+        "Analyse de marché"
+      ],
+      "happyClients": "Clients satisfaits",
+      "description": "Nous identifions les goulots d'étranglement cachés de votre organisation afin d'améliorer la production, de réduire les frais généraux et de maximiser la productivité interne de votre équipe.",
+      "callback": {
+        "title": "Demander un rappel",
+        "cta": "Réserver un appel"
+      },
+      "featuresList": [
+        "Stratégies fondées sur les données",
+        "Cadres d'excellence opérationnelle",
+        "Conseil à fort impact"
+      ]
+    },
+    "MarqueeSection": {
+      "title": "Des services stratégiques qui propulsent les entreprises modernes"
+    },
+    "OurConsultingServicesSection": {
+      "title": "Pourquoi les entreprises leaders choisissent notre conseil",
+      "titleLine2": "services worldwide",
+      "cards": [
+        {
+          "heading": 100,
+          "suffix": "%",
+          "subHeading": "Succès client",
+          "paragraph": "Nous privilégions des résultats mesurables en fournissant des stratégies de conseil personnalisées qui améliorent les performances et stimulent une croissance durable pour nos clients."
+        },
+        {
+          "heading": 85,
+          "suffix": "+",
+          "subHeading": "Croissance et stratégie",
+          "paragraph": "Nos analyses stratégiques et notre planification fondée sur les données permettent aux organisations de développer leurs activités, leur compétitivité et d'atteindre leurs objectifs à long terme."
+        },
+        {
+          "heading": 22,
+          "suffix": "x",
+          "subHeading": "ROI moyen",
+          "paragraph": "Nous privilégions des résultats mesurables en fournissant des stratégies de conseil personnalisées qui améliorent les performances et stimulent une croissance durable pour nos clients."
+        },
+        {
+          "heading": 25,
+          "suffix": "k",
+          "subHeading": "Portée du marché",
+          "paragraph": "Grâce à des stratégies innovantes et à notre expertise mondiale, nous aidons les entreprises à se développer et à renforcer leur positionnement dans leur secteur."
+        }
+      ]
+    },
+    "OurBlogSection": {
+      "subHeading": "à propos de CloudForge",
+      "title1": "Construire des solutions plus intelligentes pour",
+      "title2": "les entreprises modernes",
+      "cta": "Voir plus",
+      "blogCards": [
+        {
+          "cardImage": "/blog-card1.webp",
+          "date": "20 March 2026",
+          "content": "Donner aux dirigeants les moyens d'agir grâce à une stratégie pratique et à une connaissance approfondie du marché",
+          "authorImage": "/auther1.webp",
+          "authorName": "Carla Kenter"
+        },
+        {
+          "cardImage": "/blog-card2.webp",
+          "date": "20 March 2026",
+          "content": "Transformer les organisations grâce à des initiatives d'innovation durables",
+          "authorImage": "/auther2.webp",
+          "authorName": "Zain Vetrovs"
+        },
+        {
+          "cardImage": "/blog-card3.webp",
+          "date": "20 March 2026",
+          "content": "Renforcer les organisations grâce à une stratégie et un leadership fondés sur les données",
+          "authorImage": "/auther3.webp",
+          "authorName": "Roger Levin"
+        }
+      ]
+    }
+  },
+  "AboutPage": {
+    "HeroSection": {
+      "subHeading": "à propos de CloudForge",
+      "title": "S'associer aux entreprises pour atteindre la croissance",
+      "rating": {
+        "title": "Évalué par nos clients de conseil",
+        "value": "4.9/5",
+        "reviews": "(plus de 15 400 avis)"
+      },
+      "description": "Nous créons des expériences numériques modernes et centrées sur l'utilisateur qui aident les entreprises à se démarquer, à engager leurs clients et à accélérer leur croissance."
+    },
+    "SliderSection": {
+      "subHeading": "à propos de CloudForge",
+      "title1": "We are strategic partners delivering",
+      "title2": "innovation growth",
+      "globalReach": {
+        "line1": "Avorica® donne aux dirigeants les moyens d'agir",
+        "line2": "partout dans le monde"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "review": "Des conseils d'experts qui transforment véritablement les organisations. Avorica apporte une expertise de haut niveau sur les marchés mondiaux complexes. Leur équipe est entièrement dédiée aux résultats. Professionnalisme. Un soutien stratégique exceptionnel pour l'expansion mondiale. Des résultats remarquables au quotidien.",
+          "founderName": "Nora Simon",
+          "designation": "Fondateur de Global Bank",
+          "company": "Global Bank",
+          "founderImage": "/testimonials/founders/review-image-1.webp",
+          "companyImage": "/testimonials/companies/globalBank.webp",
+          "alt": {
+            "founder": "Portrait of Nora Simon, Founder of Global Bank",
+            "company": "Carte de marque Global Bank"
+          }
+        },
+        {
+          "id": 2,
+          "review": "Avorica transforme en profondeur les entreprises et apporte une clarté remarquable dans les secteurs internationaux complexes. Nos experts sont intransigeants sur l'impact et l'excellence.",
+          "founderName": "James Benett",
+          "designation": "PDG de Wager-crafts",
+          "company": "Wager-crafts",
+          "founderImage": "/testimonials/founders/Review-image-2-author.webp",
+          "companyImage": "/testimonials/companies/Wager.webp",
+          "alt": {
+            "founder": "Portrait of James Benett, CEO of Wager-crafts",
+            "company": "Carte de marque Wager-crafts"
+          }
+        },
+        {
+          "id": 3,
+          "review": "Des stratégies innovantes qui redéfinissent en profondeur les organisations. Avorica apporte une clarté remarquable sur les marchés internationaux complexes et fournit un soutien stratégique pour l'expansion mondiale.",
+          "founderName": "Locus Menava",
+          "designation": "Manager",
+          "company": "Zantic Vision",
+          "founderImage": "/testimonials/founders/Review-image-3-author.jpg",
+          "companyImage": "/testimonials/companies/Zantic.webp",
+          "alt": {
+            "founder": "Portrait de Locus Menava, directeur de Zantic Vision",
+            "company": "Carte de marque Zantic Vision"
+          }
+        }
+      ]
+    },
+    "StatsSection": {
+      "cards": [
+        {
+          "title": "Succès client",
+          "percentage": "96",
+          "suffix": "%",
+          "description": "Croissance stratégique pour votre entreprise."
+        },
+        {
+          "title": "Market expansion",
+          "percentage": "85",
+          "suffix": "%",
+          "description": "Des résultats évolutifs pour chaque client.",
+          "src": "/about/Market-expansion-image-1.webp"
+        },
+        {
+          "title": "Asset efficiency",
+          "percentage": "99",
+          "suffix": "%",
+          "description": "Optimiser la valeur grâce à des données intelligentes.",
+          "src": "/about/Asset-efficiency-image-1.webp"
+        }
+      ]
+    },
+    "MeasurableAchievementsSection": {
+      "title1": "Des résultats mesurables dans",
+      "title2": "plusieurs secteurs",
+      "trustLabel": "Confiance",
+      "trustDescription": "Rejoignez les plus de 750 entreprises qui font confiance à nos services de conseil experts",
+      "flipperSlider": [
+        {
+          "id": 1,
+          "tag": "[000001] ÉTUDE DE CAS",
+          "title": "Transformation numérique des entreprises, excellence opérationnelle du commerce de détail",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "En savoir plus"
+        },
+        {
+          "id": 2,
+          "tag": "[02] ÉTUDE DE CAS",
+          "title": "Améliorer les performances grâce à des analyses avancées de pointe",
+          "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "En savoir plus"
+        },
+        {
+          "id": 3,
+          "tag": "[03] ÉTUDE DE CAS",
+          "title": "Transformation numérique des entreprises, excellence opérationnelle du commerce de détail",
+          "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "En savoir plus"
+        },
+        {
+          "id": 4,
+          "tag": "[04] ÉTUDE DE CAS",
+          "title": "Améliorer les performances grâce à des analyses avancées de pointe",
+          "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "En savoir plus"
+        },
+        {
+          "id": 5,
+          "tag": "[05] ÉTUDE DE CAS",
+          "title": "Créer une valeur durable dans les communautés du monde entier",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "En savoir plus"
+        }
+      ]
+    },
+    "OurFeaturesSection": {
+      "subHeading": "nos fonctionnalités",
+      "title": "Nous sommes des partenaires stratégiques qui stimulent l'innovation et la croissance",
+      "tags": [
+        "Analyse de marché",
+        "Stratégie de croissance"
+      ],
+      "revenueCard": {
+        "title": "Développez vos revenus",
+        "description": "Qu'il s'agisse d'une fusion ou d'un pivot allégé, la croissance n'a jamais été aussi rapide.",
+        "strategyTitle": "Nous avons livré 6 stratégies de croissance",
+        "milestones": "18 étapes clés franchies"
+      },
+      "growthStats": {
+        "quarterlyGrowth": "+24 % de croissance trimestrielle moyenne",
+        "rating": "Noté 4,9/5 sur plus de 600 avis",
+        "projects": "1 300 projets réalisés"
+      },
+      "services": [
+        "Solutions de conception résidentielle",
+        "Services de gestion de projet",
+        "Experts en conception structurelle"
+      ]
+    },
+    "OurTeamSection": {
+      "subHeading": "Notre équipe",
+      "title": "Découvrez les autres membres de l'équipe",
+      "members": [
+        {
+          "src": "/about/Team-image-1.webp",
+          "title": "Noah Walker",
+          "subTitle": "Consultant en stratégie"
+        },
+        {
+          "src": "/about/Team-image-2.webp",
+          "title": "Isabella Reed",
+          "subTitle": "Consultant en processus"
+        },
+        {
+          "src": "/about/Team-image-3.webp",
+          "title": "Ryan Collins",
+          "subTitle": "Analyste en stratégie"
+        }
+      ]
+    },
+    "BusinessShowcaseSection": {
+      "strategy": {
+        "text": "Conçu pour aider les entreprises à naviguer dans la complexité avec confiance et clarté",
+        "tags": [
+          "Analyse de marché",
+          "Stratégie de croissance"
+        ],
+        "cta": "Let's Talk"
+      },
+      "servicesOverview": {
+        "cards": [
+          {
+            "id": 1,
+            "title": "Positionnement clair et planification d'une croissance évolutive",
+            "src": "/about/Process-icon-1.svg"
+          },
+          {
+            "id": 2,
+            "title": "Amélioration des processus pour accroître l'efficacité et les bénéfices",
+            "src": "/about/Process-icon-2.svg"
+          },
+          {
+            "id": 3,
+            "title": "Solutions technologiques pour une croissance moderne",
+            "src": "/about/Process-icon-3.svg"
+          }
+        ],
+        "paragraphs": [
+          "Transformer un système d'entreprise historique en puissances numériques modernes grâce à des stratégies et une conception fondées sur les données.",
+          "Notre cabinet de conseil permet aux grandes entreprises internationales de gérer les évolutions complexes des marchés avec une évolutivité optimale."
+        ]
+      }
+    }
+  },
+  "ServicesPage": {
+    "HeroSection": {
+      "rating": "4.9/5",
+      "trustedWorldwide": "Reconnue dans le monde entier",
+      "title1": "Des stratégies intelligentes qui",
+      "title2": "stimulent la croissance de l'entreprise",
+      "cta": "parlons-en",
+      "description": "Nous créons des expériences numériques modernes et centrées sur l'utilisateur qui aident les entreprises à se démarquer, à engager leurs clients et à accélérer leur croissance.",
+      "businessServices": [
+        {
+          "id": "01",
+          "title": "Stratégie d'entreprise"
+        },
+        {
+          "id": "02",
+          "title": "Croissance durable"
+        },
+        {
+          "id": "03",
+          "title": "Planification de l'innovation"
+        },
+        {
+          "id": "04",
+          "title": "Analyse de marché"
+        }
+      ]
+    },
+    "AboutCloudForgeSection": {
+      "subHeading": "à propos de CloudForge",
+      "description": "We are a consulting firm that turns ideas into market ecosystems. Rooted in data and driven by insight, we merge strategy and efficiency"
+    },
+    "AchievementSection": {
+      "statCard": {
+        "title": "Projets de conseil réalisés",
+        "description": "CloudForge fournit des solutions de conseil stratégique qui aident les entreprises à développer leurs opérations, à optimiser leurs performances et à renforcer les décisions de leurs dirigeants pour favoriser la croissance."
+      },
+      "horizontalStatCard": {
+        "title": "Secteurs accompagnés dans le monde entier",
+        "description": "Notre expérience en conseil couvre de nombreux secteurs grâce à des stratégies adaptées."
+      }
+    },
+    "PracticalServicesSection": {
+      "title": "Des services pratiques axés sur des résultats commerciaux concrets",
+      "cta": "En savoir plus",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Analyse de marché",
+          "description": "Transformez votre vision d'entreprise en stratégies qui orientent la croissance, optimisent les ressources et renforcent le positionnement à long terme sur le marché.",
+          "tags": [
+            "Amélioration des processus",
+            "Gestion des risques",
+            "Esprit startup",
+            "Planification d'entreprise",
+            "+2"
+          ],
+          "image": "/service/Service-solutions-1.webp"
+        },
+        {
+          "id": 2,
+          "title": "Stratégie de croissance",
+          "description": "Nous aidons les entreprises à identifier les opportunités, à optimiser leurs performances et à se développer durablement grâce à une planification fondée sur les données.",
+          "tags": [
+            "Croissance des performances",
+            "Développement de l'entreprise",
+            "Optimisation des revenus",
+            "Planification de l'expansion",
+            "+3"
+          ],
+          "image": "/service/Service-solutions-2.webp"
+        },
+        {
+          "id": 3,
+          "title": "Planification de l'innovation",
+          "description": "Construisez des systèmes et des stratégies prêts pour l'avenir qui encouragent l'innovation, améliorent les opérations et créent une valeur à long terme.",
+          "tags": [
+            "Solutions numériques",
+            "Alignement des équipes",
+            "Conception des flux de travail",
+            "Adoption des technologies",
+            "+4"
+          ],
+          "image": "/service/Service-solutions-3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Conseil aux entreprises",
+          "description": "Fournir des solutions de conseil stratégique qui permettent aux organisations de relever les défis et d'atteindre une croissance durable.",
+          "tags": [
+            "Étude de marché",
+            "Planification d'entreprise",
+            "Accompagnement du leadership",
+            "Stratégie opérationnelle",
+            "+1"
+          ],
+          "image": "/service/Service-solutions-4.webp"
+        }
+      ]
+    },
+    "WhyChooseUsSection": {
+      "title": "Pourquoi les entreprises leaders choisissent notre conseil",
+      "successCard": {
+        "title": "Taux de réussite des entreprises",
+        "benefits": [
+          "Stratégies fondées sur les données",
+          "Conseil à fort impact"
+        ],
+        "cta": "Obtenir un devis"
+      },
+      "trustedBusinesses": {
+        "title": "Plus de 200 entreprises dans le monde nous font confiance depuis",
+        "metrics": [
+          {
+            "id": 1,
+            "title": "Solutions stratégiques",
+            "icon": "/service/icon-strategic.svg"
+          },
+          {
+            "id": 2,
+            "title": "Crée de l'impact",
+            "icon": "/service/icon-creates.svg"
+          },
+          {
+            "id": 3,
+            "title": "Stimule la croissance",
+            "icon": "/service/icon-drives.svg"
+          },
+          {
+            "id": 4,
+            "title": "Fondé sur les données",
+            "icon": "/service/icon-data.svg"
+          }
+        ]
+      },
+      "efficiencyCard": {
+        "title": "Découvrez votre potentiel d'efficacité de 90%",
+        "description": "Construisez des plans marketing stratégiques qui renforcent la visibilité de votre marque. Transformez les analyses de marché en campagnes qui stimulent l'engagement et une croissance durable.",
+        "benefits": [
+          "Stratégies fondées sur les données",
+          "Conseil à fort impact",
+          "Cadres d'excellence opérationnelle",
+          "Process excellence management frameworks"
+        ],
+        "cta": "Obtenir un devis"
+      }
+    }
+  },
+  "BlogPage": {
+    "HeroSection": {
+      "label": "Notre blog",
+      "title": "Analyses stratégiques pour les entreprises"
+    },
+    "BusinessGrowthSection": {
+      "title": "Journal de la croissance des entreprises",
+      "blogCards": [
+        [
+          {
+            "id": 1,
+            "cardImage": "/blog/Blog-a1.webp",
+            "date": "20 March 2026",
+            "content": "Strengthening organizations with data-driven strategy and leadership.",
+            "authorImage": "/blog/Blog-author-4.webp",
+            "autherName": "Roger Levin"
+          },
+          {
+            "id": 2,
+            "cardImage": "/blog/Blog-a2.webp",
+            "date": "18 March 2026",
+            "content": "Building sustainable growth strategies for businesses in competitive markets.",
+            "authorImage": "/blog/Blog-author-5.webp",
+            "autherName": "Emma Watson"
+          },
+          {
+            "id": 3,
+            "cardImage": "/blog/Blog-a3.webp",
+            "date": "15 March 2026",
+            "content": "How digital transformation achieve long-term success.",
+            "authorImage": "/blog/Blog-author-6.webp",
+            "autherName": "Michael Carter"
+          }
+        ],
+        [
+          {
+            "id": 4,
+            "cardImage": "/blog/Blog-a4.webp",
+            "date": "12 March 2026",
+            "content": "Des cadres de leadership qui aident les équipes à s'adapter et à innover en toute confiance.",
+            "authorImage": "/blog/Blog-author-8.webp",
+            "autherName": "Sophia Miller"
+          },
+          {
+            "id": 5,
+            "cardImage": "/blog/Blog-a5.webp",
+            "date": "10 March 2026",
+            "content": "Des techniques pratiques de conseil aux entreprises pour améliorer l'efficacité opérationnelle.",
+            "authorImage": "/blog/Blog-author-8.webp",
+            "autherName": "Roger Levin"
+          },
+          {
+            "id": 6,
+            "cardImage": "/blog/Blog-a6.webp",
+            "date": "08 March 2026",
+            "content": "Transformer les analyses de marché en opportunités stratégiques pour la croissance de l'entreprise.",
+            "authorImage": "/blog/Blog-author-9.webp",
+            "autherName": "Olivia Bennett"
+          }
+        ],
+        [
+          {
+            "id": 7,
+            "cardImage": "/blog/Blog-b7.webp",
+            "date": "05 March 2026",
+            "content": "Pourquoi l'innovation centrée sur le client est le fondement des entreprises modernes.",
+            "authorImage": "/blog/Blog-author-6.webp",
+            "autherName": "Daniel Brooks"
+          },
+          {
+            "id": 8,
+            "cardImage": "/blog/Blog-a8.webp",
+            "date": "02 March 2026",
+            "content": "Développer les organisations grâce à une planification et une exécution axées sur la performance.",
+            "authorImage": "/blog/Blog-author-5.webp",
+            "autherName": "Michael Carter"
+          },
+          {
+            "id": 9,
+            "cardImage": "/blog/Blog-a9.webp",
+            "date": "28 February 2026",
+            "content": "Des stratégies d'entreprise prêtes pour l'avenir qui créent des avantages concurrentiels durables.",
+            "authorImage": "/blog/Blog-author-9.webp",
+            "autherName": "Emma Watson"
+          }
+        ]
+      ]
+    }
+  },
+  "ContactPage": {
+    "HeroSection": {
+      "label": "Contact",
+      "title": "Contactez-nous"
+    },
+    "ContactDetailsSection": {
+      "cards": [
+        {
+          "id": 1,
+          "text": "8851801918"
+        },
+        {
+          "id": 2,
+          "text": "info@example.com"
+        },
+        {
+          "id": 3,
+          "text": "410 Noida, Uttar pradesh 203201, INDIA"
+        }
+      ]
+    },
+    "FormSection": {
+      "title": "Dites bonjour",
+      "fields": {
+        "name": "Votre nom*",
+        "email": "Votre e-mail*",
+        "phone": "Numéro de téléphone*",
+        "subject": "Objet",
+        "message": "Votre message"
+      },
+      "terms": "J'accepte les conditions générales",
+      "submitButton": "Envoyer maintenant"
+    }
+  },
+  "Footer": {
+    "newsletter": {
+      "title1": "Abonnez-vous à notre",
+      "title2": "newsletter",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre e-mail",
+      "subscribe": "S'abonner à la newsletter"
+    },
+
+    "quickLinks": {
+      "title": "Liens rapides",
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+
+    "otherLinks": {
+      "title": "Liens rapides",
+      "passwordProtected": "Protégé par mot de passe",
+      "license": "Licence",
+      "notFound": "404"
+    },
+
+    "address": {
+      "title": "Adresse",
+      "line1": "410 Sandtown,",
+      "line2": "Noida 203207, Inde"
+    },
+
+    "contact": {
+      "title": "Contact",
+      "phone": "(888) 456 7890",
+      "email": "info@example.com"
+    }
+  }
+}

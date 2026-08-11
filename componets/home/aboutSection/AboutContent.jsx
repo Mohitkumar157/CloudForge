@@ -6,13 +6,8 @@ import SubHeading from "@/componets/ui/SubHeading";
 import { ArrowUpRight } from "lucide-react";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import { gsap, ScrollTrigger, useGSAP } from "../../../app/lib/gsap";
-const services = [
-    "Market expansion strategy",
-    "Project management services",
-    "Structural design experts",
-];
-
 
 function AboutContent() {
     const sectionRef = useRef();
@@ -20,13 +15,18 @@ function AboutContent() {
     const headingRef = useRef();
     const listRef = useRef();
 
+    const t = useTranslations("HomePage.AboutCloudForgeSection");
+
+    const services = t.raw("services");
+    const tags = t.raw("tags");
+
     useGSAP(() => {
         const mm = gsap.matchMedia();
 
         const tags = sectionRef.current.querySelectorAll('[data-animate="tags"]');
         const lists = sectionRef.current.querySelectorAll('[data-animate="list"]');
         const button = sectionRef.current.querySelector('[data-animate="button"]');
-        
+
         // -------------------- MOBILE --------------------
         mm.add("(max-width: 767px)", () => {
 
@@ -103,7 +103,7 @@ function AboutContent() {
                         y: 0,
                         opacity: 1,
                         duration: 0.8,
-                        stagger : 0.10,
+                        stagger: 0.10,
                         ease: "power4.out",
                         scrollTrigger: {
                             trigger: listRef.current,
@@ -173,23 +173,24 @@ function AboutContent() {
                 }
             );
 
-            lists.forEach((item)=>{
-                gsap.fromTo(item,
+            lists.forEach((item) => {
+                gsap.fromTo(
+                    item,
                     { y: 100, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.8,
-                    stagger: 0.12,
-                    ease: "power4.out",
-                    scrollTrigger: {
-                        trigger: listRef.current,
-                        start: "top 60%",
-                        invalidateOnRefresh: true,
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.8,
+                        stagger: 0.12,
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: listRef.current,
+                            start: "top 60%",
+                            invalidateOnRefresh: true,
+                        }
                     }
-                }
-            );
-            })
+                );
+            });
         });
 
         ScrollTrigger.refresh();
@@ -199,28 +200,38 @@ function AboutContent() {
     }, { scope: sectionRef });
 
 
-
     return (
-        <div ref={sectionRef} className='right w-full flex flex-col justify-between'>
+        <div
+            ref={sectionRef}
+            className='right w-full flex flex-col justify-between'
+        >
+
             <SubHeading
                 ref={subHeadingRef}
-                headingText={"about CloudForge"}
+                headingText={t("subHeading")}
             />
 
             <SecondHeading ref={headingRef}>
-                We are strategic partners <br className='hidden lg:block' /> delivering innovation growth
+                {t("title1")}
+                <br className="hidden lg:block" />
+                {t("title2")}
             </SecondHeading>
 
 
             <div className='flex items-center gap-5 font-semibold overflow-y-hidden'>
-                <div data-animate="tags">[Market analysis]</div>
-                <div data-animate="tags">[Growth strategy]</div>
+                {tags.map((tag, index) => (
+                    <div key={index} data-animate="tags">
+                        [{tag}]
+                    </div>
+                ))}
             </div>
+
+
             <div className='md:py-10 lg:py-14 py-6 overflow-y-hidden'>
                 <div className="overflow-y-hidden">
                     <div data-animate="button">
                         <PrimaryButton
-                            ctaText={"Get a quote"}
+                            ctaText={t("cta")}
                             className={"bg-[#20324f] text-#f1f1f1 group-hover:bg-[#f1f1f1] group-hover:border group-hover:border-[#20324f] transition-all duration-300"}
                             btnTextClass={"text-[#f1f1f1] group-hover:text-[#212121] transition-all duration-300"}
                             circelClass={"bg-[#f1f1f1] group-hover:bg-[#20324f]! group-hover:text-[#f1f1f1]!"}
@@ -229,23 +240,35 @@ function AboutContent() {
                 </div>
             </div>
 
+
             <div ref={listRef}>
                 {services.map((item, index) => (
-                    <div key={index} className={`about-list overflow-hidden `}>
-                        <div data-animate="list"
-                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}
+                    <div
+                        key={index}
+                        className={`about-list overflow-hidden `}
+                    >
+                        <div
+                            data-animate="list"
+                            className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0
+                                    ? "pb-4 md:pb-7"
+                                    : "py-4 md:py-7"
+                                } border-b border-gray-400`}
                         >
+
                             <div className="flex text-xl items-center gap-2 font-semibold">
                                 <span>0{index + 1}.</span>
                                 <p>{item}</p>
                             </div>
 
                             <ArrowUpRight />
+
                             <div className='line w-0 absolute left-0 -bottom-px bg-black group-hover:w-full transition-all duration-500 h-px'></div>
+
                         </div>
                     </div>
                 ))}
             </div>
+
         </div>
     )
 }

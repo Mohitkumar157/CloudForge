@@ -1,5 +1,6 @@
 "use client"
 import gsap from 'gsap';
+import { useTranslations } from "next-intl";
 import React, {useRef } from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -22,6 +23,7 @@ const slideImages = [
 ]
 
 function HeroSlides({ children }) {
+    const t = useTranslations("HomePage.HeroSection");
     const slideRef = useRef([]);
     const heroRef = useRef(null);
     const circelRef = useRef(null);
@@ -58,7 +60,7 @@ function HeroSlides({ children }) {
             duration: 0.5,
         });
          gsap.from('[data-animate="bottom-text"]', {
-                y: 100,
+                y: 300,
                 opacity: 0,
                 duration: 1,
                 ease: "power4.out",
@@ -106,7 +108,7 @@ function HeroSlides({ children }) {
                 className='hidden lg:block absolute -bottom-31 left-15
                  text-[#f1f1f1] font-semibold 
                  text-[220px]! z-40'>
-                Resilience
+               {t("bottomText")}
             </h2>
         </div>
     )

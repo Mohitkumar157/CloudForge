@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroContent from './HeroContent'
-
 function ServicesHero() {
     return (
         <section className=''>

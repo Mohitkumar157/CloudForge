@@ -1,6 +1,671 @@
 {
+  "Header": {
+    "getQuote": "Get a quote",
+    "Navigation": {
+      "home": "home",
+      "about": "about",
+      "services": "services",
+      "blog": "blog",
+      "contact": "contact"
+    }
+  },
   "HomePage": {
-    "title1": "Design",
-    "title2": "that drives growth"
+    "HeroSection": {
+      "title1": "Design",
+      "title2": "that drives growth",
+      "description": "We create modern, user-focused digital experiences that help businesses stand out, engage customers, and scale faster.",
+      "cta": "Let's talk",
+      "experience": {
+        "years": "25+",
+        "label": "Years of work experience"
+      },
+      "reviews": {
+        "rating": "98%",
+        "label": "Rated 4.9/5 from over 1200 reviews"
+      },
+      "bottomText": "Resilience"
+    },
+    "ConsultingSection": {
+      "description": "We are a consulting firm that turns ideas into market ecosystems. Rooted in data and driven by insight, we merge strategy and efficiency to design businesses that perform, evolve and endure."
+    },
+    "AboutCloudForgeSection": {
+      "subHeading": "about CloudForge",
+      "title1": "We are strategic partners",
+      "title2": "who drive innovation and growth",
+      "tags": [
+        "Market analysis",
+        "Growth strategy"
+      ],
+      "cta": "Get a quote",
+      "services": [
+        "Market expansion strategy",
+        "Project management services",
+        "Structural design experts"
+      ]
+    },
+    "WhyUsSection": {
+      "title": "Why leading companies choose our consulting",
+      "strategicGrowth": {
+        "title": "Strategic growth partner, results-driven success",
+        "subtitle": "",
+        "description": "Their team delivered high-impact strategies that helped our revenue grow, optimize operations, and build long-term sustainable value."
+      },
+      "provenOutcomes": {
+        "label": "Proven outcomes",
+        "value": "80%",
+        "description": "Revenue growth achieved by our clients within the first twelve months of partnership."
+      },
+      "imageCard": {
+        "description": "We deliver expert business advice that helps leaders scale.",
+        "cta": "Get a quote"
+      },
+      "chartCard": {
+        "title": "Operational efficiency",
+        "subtitle": "Streamlined workflow systems",
+        "description": "We identify hidden bottlenecks in your organization to improve output, reduce your overhead, and maximize your team's internal productivity.",
+        "cta": "Get a quote",
+        "growthTitle": "Client project growth"
+      },
+      "targetedGrowth": {
+        "label": "Targeted growth",
+        "value": "98%",
+        "description": "Client retention rate due to our hands-on approach and measurable impact on financial results."
+      }
+    },
+    "FeaturesSection": {
+      "subHeading": "our features",
+      "title": "We are strategic partners delivering growth",
+      "tags": [
+        "Market analysis",
+        "Market analysis"
+      ],
+      "happyClients": "Happy clients",
+      "description": "We identify hidden bottlenecks in your organization to improve output overhead, and maximize your team's internal valued productivity.organization improve output.",
+      "callback": {
+        "title": "Request a call back",
+        "cta": "Book a call"
+      },
+      "featuresList": [
+        "Data driven strategies",
+        "Operational excellence frameworks",
+        "High impact advisory"
+      ]
+    },
+    "MarqueeSection": {
+      "title": "Strategic services that power modern businesses"
+    },
+    "OurConsultingServicesSection": {
+      "title": "Why leading companies choose our consulting",
+      "titleLine2": "services worldwide",
+      "cards": [
+        {
+          "heading": 100,
+          "suffix": "%",
+          "subHeading": "Client success",
+          "paragraph": "We prioritize measurable outcomes by delivering tailored consulting strategies that enhance performance, and drive sustainable client growth."
+        },
+        {
+          "heading": 85,
+          "suffix": "+",
+          "subHeading": "Growth & strategy",
+          "paragraph": "Our strategic insights and data-driven planning empower organizations to expand operations, competitiveness, and achieve long-term objectives."
+        },
+        {
+          "heading": 22,
+          "suffix": "x",
+          "subHeading": "Average ROI",
+          "paragraph": "We prioritize measurable outcomes by delivering tailored consulting strategies that enhance performance, and drive sustainable client growth."
+        },
+        {
+          "heading": 25,
+          "suffix": "k",
+          "subHeading": "Market reach",
+          "paragraph": "Through innovative strategies and global expertise, we help businesses expand and strengthen industry positioning."
+        }
+      ]
+    },
+    "OurBlogSection": {
+      "subHeading": "about CloudForge",
+      "title1": "Building smarter solutions for",
+      "title2": "modern businesses",
+      "cta": "View More",
+      "blogCards": [
+        {
+          "cardImage": "/blog-card1.webp",
+          "date": "20 March 2026",
+          "content": "Empowering leaders with practical strategy and market intelligence",
+          "authorImage": "/auther1.webp",
+          "authorName": "Carla Kenter"
+        },
+        {
+          "cardImage": "/blog-card2.webp",
+          "date": "20 March 2026",
+          "content": "Transforming organizations through sustainable innovation initiatives",
+          "authorImage": "/auther2.webp",
+          "authorName": "Zain Vetrovs"
+        },
+        {
+          "cardImage": "/blog-card3.webp",
+          "date": "20 March 2026",
+          "content": "Strengthening organizations with data-driven strategy and leadership",
+          "authorImage": "/auther3.webp",
+          "authorName": "Roger Levin"
+        }
+      ]
+    }
+  },
+  "AboutPage": {
+    "HeroSection": {
+      "subHeading": "about CloudForge",
+      "title": "Partnering with businesses to achieve growth",
+      "rating": {
+        "title": "Rated by our consulting clients",
+        "value": "4.9/5",
+        "reviews": "(15,400+ Reviews)"
+      },
+      "description": "We create modern, user-focused digital experiences that help businesses stand out, engage customers, and scale faster."
+    },
+    "SliderSection": {
+      "subHeading": "about CloudForge",
+      "title1": "We are strategic partners delivering",
+      "title2": "innovation growth",
+      "globalReach": {
+        "line1": "Avorica® empowers leaders",
+        "line2": "from across the globe"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "review": "Expert guidance that truly transforms organizations. Avorica provides high-level insight into complex, global markets. Their team is dedicated to results. Professionalism. Outstanding strategic support for global expansion. Outstanding results delivered daily.",
+          "founderName": "Nora Simon",
+          "designation": "Founder of GlobalBank",
+          "company": "Global Bank",
+          "founderImage": "/testimonials/founders/review-image-1.webp",
+          "companyImage": "/testimonials/companies/globalBank.webp",
+          "alt": {
+            "founder": "Portrait of Nora Simon, Founder of Global Bank",
+            "company": "Global Bank brand card"
+          }
+        },
+        {
+          "id": 2,
+          "review": "Avorica fundamentally reshapes enterprises and delivers profound clarity across intricate international sectors. Our experts are relentless regarding impact and excellence.",
+          "founderName": "James Benett",
+          "designation": "CEO of Wager-crafts",
+          "company": "Wager-crafts",
+          "founderImage": "/testimonials/founders/Review-image-2-author.webp",
+          "companyImage": "/testimonials/companies/Wager.webp",
+          "alt": {
+            "founder": "Portrait of James Benett, CEO of Wager-crafts",
+            "company": "Wager-crafts brand card"
+          }
+        },
+        {
+          "id": 3,
+          "review": "Innovative strategies that fundamentally redefine organizations. Avorica delivers profound clarity within complex international markets and provides strategic support for global expansion.",
+          "founderName": "Locus Menava",
+          "designation": "Manager",
+          "company": "Zantic Vision",
+          "founderImage": "/testimonials/founders/Review-image-3-author.jpg",
+          "companyImage": "/testimonials/companies/Zantic.webp",
+          "alt": {
+            "founder": "Portrait of Locus Menava, Manager of Zantic Vision",
+            "company": "Zantic Vision brand card"
+          }
+        }
+      ]
+    },
+    "StatsSection": {
+      "cards": [
+        {
+          "title": "Client success",
+          "percentage": "96",
+          "suffix": "%",
+          "description": "Strategic growth for your business."
+        },
+        {
+          "title": "Market expansion",
+          "percentage": "85",
+          "suffix": "%",
+          "description": "Scalable results for every client.",
+          "src": "/about/Market-expansion-image-1.webp"
+        },
+        {
+          "title": "Asset efficiency",
+          "percentage": "99",
+          "suffix": "%",
+          "description": "Optimizing value through smart data.",
+          "src": "/about/Asset-efficiency-image-1.webp"
+        }
+      ]
+    },
+    "MeasurableAchievementsSection": {
+      "title1": "Measurable achievements across",
+      "title2": "multiple sectors",
+      "trustLabel": "Trust",
+      "trustDescription": "Join the 750+ enterprises trusting our expert business consultancy services",
+      "flipperSlider": [
+        {
+          "id": 1,
+          "tag": "[000001] CASE SPOTLIGHT",
+          "title": "Enterprise digital transformation, retail operational excellence",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "Discover more"
+        },
+        {
+          "id": 2,
+          "tag": "[02] CASE SPOTLIGHT",
+          "title": "Boosting performance using very advanced analytics insights",
+          "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "Discover more"
+        },
+        {
+          "id": 3,
+          "tag": "[03] CASE SPOTLIGHT",
+          "title": "Enterprise digital transformation, retail operational excellence",
+          "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "Discover more"
+        },
+        {
+          "id": 4,
+          "tag": "[04] CASE SPOTLIGHT",
+          "title": "Boosting performance using very advanced analytics insights",
+          "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "Discover more"
+        },
+        {
+          "id": 5,
+          "tag": "[05] CASE SPOTLIGHT",
+          "title": "Creating lasting value in communities worldwide",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+          "buttonText": "Discover more"
+        }
+      ]
+    },
+    "OurFeaturesSection": {
+      "subHeading": "our features",
+      "title": "We are strategic partners delivering innovation growth",
+      "tags": [
+        "Market analysis",
+        "Growth strategy"
+      ],
+      "revenueCard": {
+        "title": "Scale your revenue",
+        "description": "Whether it's a merger or a lean pivot,and scaling has never been this quick.",
+        "strategyTitle": "We delivered 6 growth strategies",
+        "milestones": "18 milestones achieved"
+      },
+      "growthStats": {
+        "quarterlyGrowth": "+24% quarterly growth avg",
+        "rating": "Rated 4.9/5 from over 600 review",
+        "projects": "1300 Projects completed"
+      },
+      "services": [
+        "Residential design solutions",
+        "Project management services",
+        "Structural design experts"
+      ]
+    },
+    "OurTeamSection": {
+      "subHeading": "Our team",
+      "title": "Meet the other team members",
+      "members": [
+        {
+          "src": "/about/Team-image-1.webp",
+          "title": "Noah Walker",
+          "subTitle": "Strategy Consultant"
+        },
+        {
+          "src": "/about/Team-image-2.webp",
+          "title": "Isabella Reed",
+          "subTitle": "Process Consultant"
+        },
+        {
+          "src": "/about/Team-image-3.webp",
+          "title": "Ryan Collins",
+          "subTitle": "Strategy Analyst"
+        }
+      ]
+    },
+    "BusinessShowcaseSection": {
+      "strategy": {
+        "text": "Designed to help businesses navigate complexity with confidence and clarity",
+        "tags": [
+          "Market analysis",
+          "Growth strategy"
+        ],
+        "cta": "Let's Talk"
+      },
+      "servicesOverview": {
+        "cards": [
+          {
+            "id": 1,
+            "title": "Clear positioning and scalable growth planning",
+            "src": "/about/Process-icon-1.svg"
+          },
+          {
+            "id": 2,
+            "title": "Process improvement driving efficiency and profit",
+            "src": "/about/Process-icon-2.svg"
+          },
+          {
+            "id": 3,
+            "title": "Technology-led solutions for modern growth",
+            "src": "/about/Process-icon-3.svg"
+          }
+        ],
+        "paragraphs": [
+          "Transforming a legacy business system into modern digital powerhouses by data-led strategies and design.",
+          "Our consultancy empowers global prime enterprises to run complex market shifts with top scalability."
+        ]
+      }
+    }
+  },
+  "ServicesPage": {
+    "HeroSection": {
+      "rating": "4.9/5",
+      "trustedWorldwide": "Trusted worldwide",
+      "title1": "Smart strategies that",
+      "title2": "drive business growth",
+      "cta": "lets talk",
+      "description": "We create modern, user-focused digital experiences that help businesses stand out, engage customers, and scale faster.",
+      "businessServices": [
+        {
+          "id": "01",
+          "title": "Business Strategy"
+        },
+        {
+          "id": "02",
+          "title": "Sustainable Growth"
+        },
+        {
+          "id": "03",
+          "title": "Innovation Planning"
+        },
+        {
+          "id": "04",
+          "title": "Market Analysis"
+        }
+      ]
+    },
+    "AboutCloudForgeSection": {
+      "subHeading": "about CloudForge",
+      "description": "We are a consulting firm that turns ideas into market ecosystems. Rooted in data and driven by insight, we merge strategy and efficiency"
+    },
+    "AchievementSection": {
+      "statCard": {
+        "title": "Consulting projects delivered",
+        "description": "CloudForge delivers strategic consulting solutions helping companies scale operations, optimize performance, strengthen leadership decisions to grow."
+      },
+      "horizontalStatCard": {
+        "title": "Industries supported globally",
+        "description": "Our consulting experience spans sectors with strategies."
+      }
+    },
+    "PracticalServicesSection": {
+      "title": "Practical services focused on real business outcomes",
+      "cta": "Discover more",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Market analysis",
+          "description": "Transform your business vision into strategies that guide growth, optimize resources, and strengthen long term market positioning.",
+          "tags": [
+            "Process improvement",
+            "Risk management",
+            "Startup feel",
+            "Corporate planning",
+            "+2"
+          ],
+          "image": "/service/Service-solutions-1.webp"
+        },
+        {
+          "id": 2,
+          "title": "Growth strategy",
+          "description": "We help businesses identify opportunities, optimize performance, and scale sustainably with data-driven planning.",
+          "tags": [
+            "Performance growth",
+            "Business scaling",
+            "Revenue optimization",
+            "Expansion planning",
+            "+3"
+          ],
+          "image": "/service/Service-solutions-2.webp"
+        },
+        {
+          "id": 3,
+          "title": "Innovation planning",
+          "description": "Build future-ready systems and strategies that encourage innovation, improve operations, and create long-term value.",
+          "tags": [
+            "Digital solutions",
+            "Team alignment",
+            "Workflow design",
+            "Technology adoption",
+            "+4"
+          ],
+          "image": "/service/Service-solutions-3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Business consulting",
+          "description": "Deliver strategic consulting solutions that empower organizations to overcome challenges and achieve sustainable growth.",
+          "tags": [
+            "Market research",
+            "Business planning",
+            "Leadership support",
+            "Operational strategy",
+            "+1"
+          ],
+          "image": "/service/Service-solutions-4.webp"
+        }
+      ]
+    },
+    "WhyChooseUsSection": {
+      "title": "Why leading companies choose our consulting",
+      "successCard": {
+        "title": "Businesses focus success rate",
+        "benefits": [
+          "Data driven strategies",
+          "High impact advisory"
+        ],
+        "cta": "Get a quote"
+      },
+      "trustedBusinesses": {
+        "title": "Trusted by 200+ businesses worldwide since",
+        "metrics": [
+          {
+            "id": 1,
+            "title": "Strategic solutions",
+            "icon": "/service/icon-strategic.svg"
+          },
+          {
+            "id": 2,
+            "title": "Creates impact",
+            "icon": "/service/icon-creates.svg"
+          },
+          {
+            "id": 3,
+            "title": "Drives growth",
+            "icon": "/service/icon-drives.svg"
+          },
+          {
+            "id": 4,
+            "title": "Data driven",
+            "icon": "/service/icon-data.svg"
+          }
+        ]
+      },
+      "efficiencyCard": {
+        "title": "Discover your 90% efficiency potential",
+        "description": "Build strategic marketing plans that strengthen brand visibility. Turn market insights into campaigns that drive engagement and sustainable growth.",
+        "benefits": [
+          "Data driven strategies",
+          "High impact advisory",
+          "Operational excellence frameworks",
+          "Process excellence management frameworks"
+        ],
+        "cta": "Get a quote"
+      }
+    }
+  },
+  "BlogPage": {
+    "HeroSection": {
+      "label": "Our blog",
+      "title": "Strategic business insights"
+    },
+    "BusinessGrowthSection": {
+      "title": "Business growth journal",
+      "blogCards": [
+        [
+          {
+            "id": 1,
+            "cardImage": "/blog/Blog-a1.webp",
+            "date": "20 March 2026",
+            "content": "Strengthening organizations with data-driven strategy and leadership.",
+            "authorImage": "/blog/Blog-author-4.webp",
+            "autherName": "Roger Levin"
+          },
+          {
+            "id": 2,
+            "cardImage": "/blog/Blog-a2.webp",
+            "date": "18 March 2026",
+            "content": "Building sustainable growth strategies for businesses in competitive markets.",
+            "authorImage": "/blog/Blog-author-5.webp",
+            "autherName": "Emma Watson"
+          },
+          {
+            "id": 3,
+            "cardImage": "/blog/Blog-a3.webp",
+            "date": "15 March 2026",
+            "content": "How digital transformation achieve long-term success.",
+            "authorImage": "/blog/Blog-author-6.webp",
+            "autherName": "Michael Carter"
+          }
+        ],
+        [
+          {
+            "id": 4,
+            "cardImage": "/blog/Blog-a4.webp",
+            "date": "12 March 2026",
+            "content": "Leadership frameworks that help teams adapt and innovate with confidence.",
+            "authorImage": "/blog/Blog-author-8.webp",
+            "autherName": "Sophia Miller"
+          },
+          {
+            "id": 5,
+            "cardImage": "/blog/Blog-a5.webp",
+            "date": "10 March 2026",
+            "content": "Practical business consulting techniques to improve operational efficiency.",
+            "authorImage": "/blog/Blog-author-8.webp",
+            "autherName": "Roger Levin"
+          },
+          {
+            "id": 6,
+            "cardImage": "/blog/Blog-a6.webp",
+            "date": "08 March 2026",
+            "content": "Turning market insights into strategic opportunities for business growth.",
+            "authorImage": "/blog/Blog-author-9.webp",
+            "autherName": "Olivia Bennett"
+          }
+        ],
+        [
+          {
+            "id": 7,
+            "cardImage": "/blog/Blog-b7.webp",
+            "date": "05 March 2026",
+            "content": "Why customer-focused innovation is the foundation of modern businesses.",
+            "authorImage": "/blog/Blog-author-6.webp",
+            "autherName": "Daniel Brooks"
+          },
+          {
+            "id": 8,
+            "cardImage": "/blog/Blog-a8.webp",
+            "date": "02 March 2026",
+            "content": "Scaling organizations with performance-driven planning and execution.",
+            "authorImage": "/blog/Blog-author-5.webp",
+            "autherName": "Michael Carter"
+          },
+          {
+            "id": 9,
+            "cardImage": "/blog/Blog-a9.webp",
+            "date": "28 February 2026",
+            "content": "Future-ready business strategies that create lasting competitive advantages.",
+            "authorImage": "/blog/Blog-author-9.webp",
+            "autherName": "Emma Watson"
+          }
+        ]
+      ]
+    }
+  },
+  "ContactPage": {
+    "HeroSection": {
+      "label": "Contact",
+      "title": "Connect with us"
+    },
+    "ContactDetailsSection": {
+      "cards": [
+        {
+          "id": 1,
+          "text": "8851801918"
+        },
+        {
+          "id": 2,
+          "text": "info@example.com"
+        },
+        {
+          "id": 3,
+          "text": "410 Noida, Uttar pradesh 203201, INDIA"
+        }
+      ]
+    },
+    "FormSection": {
+      "title": "Say, hello",
+      "fields": {
+        "name": "Your name*",
+        "email": "Your email*",
+        "phone": "Phone number*",
+        "subject": "Subject",
+        "message": "Your message"
+      },
+      "terms": "I agree to the terms and conditions",
+      "submitButton": "Submit now"
+    }
+  },
+  "Footer": {
+    "newsletter": {
+      "title1": "Subscribe to our",
+      "title2": "newsletter",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "subscribe": "Subscribe to newsletter"
+    },
+
+    "quickLinks": {
+      "title": "Quick links",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+
+    "otherLinks": {
+      "title": "Quick links",
+      "passwordProtected": "Password protected",
+      "license": "License",
+      "notFound": "404"
+    },
+
+    "address": {
+      "title": "Address",
+      "line1": "410 Sandtown,",
+      "line2": "Noida 203207, India"
+    },
+
+    "contact": {
+      "title": "Contact",
+      "phone": "(888) 456 7890",
+      "email": "info@example.com"
+    }
   }
 }

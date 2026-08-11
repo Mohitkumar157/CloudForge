@@ -3,9 +3,11 @@ import { ArrowUpRight } from 'lucide-react';
 import FooterHeader from './FooterHeader'
 import Link from 'next/link';
 import Reveal from '@/componets/animations/Reveal';
+import { useTranslations } from "next-intl";
 function Footer() {
+    const t = useTranslations("Footer");
   return (
-    <footer className="footer bg-[url('/footer-bg.avif')] py-16 bg-cover bg-center mt-25">
+    <footer className="footer bg-[url('/footer-bg.avif')] py-16 bg-cover bg-center mt-16 md:mt-25">
       <div className="container">
         <FooterHeader />
       </div>
@@ -14,26 +16,30 @@ function Footer() {
         <Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 overflow-hidden">
             <div data-animate="fade-up" className='flex flex-col gap-8 md:gap-18'>
-              <h3 className='text-[#f1f1f1] text-[40px] mt-4 md:mt-0 leading-12'>Subscribe to our <br /> newsletter</h3>
+              <h3 className='text-[#f1f1f1] text-[40px] mt-4 md:mt-0 leading-12'>
+                {t("newsletter.title1")}
+                <br /> 
+               {t("newsletter.title2")}
+                </h3>
               <form
                 className='flex flex-col gap-9'
               >
                 <input
                   type="text"
-                  placeholder='Your name'
+                  placeholder={t("newsletter.namePlaceholder")}
                   name='userName'
                   className='border-b border-white text-[18px] outline-0 pb-4 w-full text-white'
                 />
                 <div className='flex pb-4 items-center border-b border-white '>
                   <input
                     type="email"
-                    placeholder='Your email'
+                     placeholder={t("newsletter.emailPlaceholder")}
                     name='email'
                     className='text-[18px] outline-0 w-full text-white'
                   />
                   <button
                     type="submit"
-                    aria-label="Subscribe to newsletter"
+                     aria-label={t("newsletter.subscribe")}
                     className='group w-12 h-11 relative flex justify-center items-center overflow-hidden cursor-pointer rounded-full bg-[#f1f1f1]'>
 
                     <ArrowUpRight
@@ -50,30 +56,32 @@ function Footer() {
             <div className='important-links text-[#f1f1f1] grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
 
               <div data-animate="fade-up" className='flex flex-col gap-5'>
-                <h2 className='text-[#f1f1f1] text-[20px]!'>Quick links</h2>
+                <h2 className='text-[#f1f1f1] text-[20px]!'>
+                  {t("quickLinks.title")}
+                </h2>
                 <ul className='list-none'>
                   <li className="mb-2 relative pb-1 cursor-pointer group overflow-hidden w-fit">
-                    <Link href="/">Home</Link>
+                    <Link href="/"> {t("quickLinks.home")} </Link>
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className="mb-2 relative pb-1 cursor-pointer group overflow-hidden w-fit">
-                    <Link href="/about">About</Link>
+                   <Link href="/about"> {t("quickLinks.about")} </Link>
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className="mb-2 relative pb-1 cursor-pointer group overflow-hidden w-fit">
-                    <Link href="/pricing">Services</Link>
+                    <Link href="/service"> {t("quickLinks.services")} </Link>
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className="mb-2 relative pb-1 cursor-pointer group overflow-hidden w-fit">
-                    <Link href="/blog">Blog</Link>
+                    <Link href="/blog"> {t("quickLinks.blog")} </Link>
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className="mb-2 relative pb-1 cursor-pointer group overflow-hidden w-fit">
-                    <Link href="/contact">Contact</Link>
+                   <Link href="/contact"> {t("quickLinks.contact")} </Link>
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
                 </ul>
@@ -81,20 +89,23 @@ function Footer() {
 
 
               <div data-animate="fade-up" className='flex flex-col gap-5'>
-                <h2 className='text-[#f1f1f1] text-[20px]!'>Quick links</h2>
+                <h2 className='text-[#f1f1f1] text-[20px]!'>
+                  {t("otherLinks.title")}
+                </h2>
+                
                 <ul className='list-none'>
                   <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                    Password protected
+                   {t("otherLinks.passwordProtected")}
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                    License
+                  {t("otherLinks.license")}
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
 
                   <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                    404
+                   {t("otherLinks.notFound")}
                     <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                   </li>
                 </ul>
@@ -102,28 +113,32 @@ function Footer() {
 
               <div data-animate="fade-up" className='flex flex-col gap-5'>
                 <div className='flex flex-col gap-5'>
-                  <h2 className='text-[#f1f1f1] text-[20px]!'>Address</h2>
+                  <h2 className='text-[#f1f1f1] text-[20px]!'>
+                    {t("address.title")}
+                    </h2>
                   <ul className='list-none'>
                     <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                      410 Sandtown,
+                      {t("address.line1")}
                       <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                     </li>
                     <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                      Noida 203207 , India
+                     {t("address.line2")}
                       <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                     </li>
                   </ul>
                 </div>
 
                 <div className='flex flex-col gap-5'>
-                  <h2 className='text-[#f1f1f1] text-[20px]!'>Contact</h2>
+                  <h2 className='text-[#f1f1f1] text-[20px]!'>
+                  {t("contact.title")}
+                    </h2>
                   <ul className='list-none'>
                     <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                      (888) 456 7890
+                      {t("contact.phone")}
                       <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                     </li>
                     <li className='mb-2 relative pb-1 cursor-pointer group w-fit overflow-hidden'>
-                      info@example.com
+                     {t("contact.email")}
                       <span className="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300"></span>
                     </li>
                   </ul>

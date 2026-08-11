@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 
 import Hero from '@/componets/home/hero/Hero';
 const Marquee = dynamic(() => import("@/componets/ui/Marquee"))
-const AboutKairo = dynamic(() => import("@/componets/home/aboutSection/AboutKairo"))
+const AboutCloudForge = dynamic(() => import("@/componets/home/aboutSection/AboutCloudForge"))
 const ConsultingFirm = dynamic(() => import("@/componets/home/consultingFirm/ConsultingFirm"));
 const OurFeatures = dynamic(() => import('@/componets/home/our-features/OurFeatures'));
 const OurConsultingServices = dynamic(() => import("@/componets/home/consultingFirm/OurConsultingServices"))
@@ -67,7 +67,7 @@ function HomePage() {
     <>
       <Hero />
       <ConsultingFirm />
-      <AboutKairo />
+      <AboutCloudForge />
       <WhyUs />
       <OurFeatures />
       <Marquee imageArray={imageArray} />

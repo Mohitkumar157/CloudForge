@@ -22,6 +22,28 @@ function Reveal({ children }) {
 
                 const config = animations[card.dataset.animate]
                 if (!config) return;
+
+                const childrens = card.querySelectorAll("[data-animate-child]");
+                console.log("CHILDREN", childrens);
+
+                const childTl = gsap.timeline({ paused: true });
+
+                childrens.forEach((child) => {
+                    const childConfig = animations[child.dataset.animateChild];
+
+                    if (!childConfig) return;
+
+                    childTl.from(child, {
+                        ...childConfig.from,
+                        duration: childConfig.duration ?? 1,
+                        ease: "power4.out",
+                    },
+                        0
+                    );
+                });
+
+
+
                 gsap.from(card, {
                     ...config.from,
                     duration: config.duration ?? 1,
@@ -33,9 +55,8 @@ function Reveal({ children }) {
                         toggleActions: "play none none none",
                         invalidateOnRefresh: true,
                         onEnter: () => {
+                            childTl.play();
                             const odometers = card.querySelectorAll("[data-odometer]");
-                            console.log("ODODMETER", odometers);
-
                             odometers.forEach((odometer) => {
                                 odometer.dispatchEvent(
                                     new CustomEvent("odometer-start")
@@ -54,12 +75,36 @@ function Reveal({ children }) {
 
         mm.add("(min-width: 768px)", () => {
             const cards = wrapperRef.current.querySelectorAll("[data-animate]");
-            console.log("Cards", cards);
+
 
 
             cards.forEach((card) => {
                 const config = animations[card.dataset.animate]
                 if (!config) return;
+
+
+
+                const childrens = card.querySelectorAll("[data-animate-child]");
+                console.log("CHILDREN", childrens);
+
+                const childTl = gsap.timeline({ paused: true });
+
+                childrens.forEach((child) => {
+                    const childConfig = animations[child.dataset.animateChild];
+
+                    if (!childConfig) return;
+
+                    childTl.from(child, {
+                        ...childConfig.from,
+                        duration: childConfig.duration ?? 1,
+                        ease: "power4.out",
+                    },
+                        0
+                    );
+                });
+
+
+
                 gsap.from(card, {
                     ...config.from,
                     duration: config.duration ?? 1,
@@ -69,9 +114,8 @@ function Reveal({ children }) {
                         start: config.desktopStart ?? "top 75%",
                         invalidateOnRefresh: true,
                         onEnter: () => {
+                            childTl.play();
                             const odometers = card.querySelectorAll("[data-odometer]");
-                            console.log("ODODMETER", odometers);
-
                             odometers.forEach((odometer) => {
                                 odometer.dispatchEvent(
                                     new CustomEvent("odometer-start")
@@ -94,10 +138,17 @@ function Reveal({ children }) {
 
     }, { scope: wrapperRef })
     return (
-        <section ref={wrapperRef}>
+        <section ref={wrapperRef} className='w-full'>
             {children}
         </section>
     )
 }
 
 export default Reveal;
+
+
+
+
+
+
+

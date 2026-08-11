@@ -1,44 +1,53 @@
-import React from 'react'
-import InfoCard from './InfoCard';
-import StatsCard from './StatsCard';
-import ImageCard from './ImageCard';
-import ChartCard from './ChartCard';
-import SecondHeading from '@/componets/ui/SecondHeading';
-import Reveal from '@/componets/animations/Reveal';
-import Odometer from '@/componets/ui/Odometer';
+"use client";
+
+import React from "react";
+import InfoCard from "./InfoCard";
+import StatsCard from "./StatsCard";
+import ImageCard from "./ImageCard";
+import ChartCard from "./ChartCard";
+import SecondHeading from "@/componets/ui/SecondHeading";
+import Reveal from "@/componets/animations/Reveal";
+import Odometer from "@/componets/ui/Odometer";
+import { useTranslations } from "next-intl";
+
 function WhyUs() {
+    const t = useTranslations("HomePage.WhyUsSection");
+
     return (
-        <section className='bg-[#c6bdab] py-16 md:py-20 lg:py-24'>
-
-
-            <div className="container">
-                <div className='mb-4 md:mb-6'>
+        <section>
+            <div className="container md:px-0!">
+                <div className="mb-4 md:mb-6">
                     <SecondHeading
                         className={"md:text-center leading-[1.08] text-center!"}
-                        children={"Why leading companies choose our consulting"}
+                        children={t("title")}
                     />
                 </div>
 
                 <Reveal>
-                    <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
-                        <div data-animate="scale-in" className='overflow-hidden'>
+                    <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+
+                        <div
+                            data-animate="scale-in"
+                            className="overflow-hidden"
+                        >
                             <InfoCard
-                                title="Strategic growth partner Results driven success"
-                                subtitle=""
-                                description="Their team delivered high-impact strategies that helped our revenue grow, optimize operations, and build long-term sustainable value."
+                                title={t("strategicGrowth.title")}
+                                subtitle={t("strategicGrowth.subtitle")}
+                                description={t("strategicGrowth.description")}
                             />
                         </div>
 
+
                         <div data-animate="scale-in">
                             <StatsCard
-                                label="Proven outcomes"
-                                value="80%"
-                                img={"/icon.svg"}
-                                description="Revenue growth achieved by our clients within the first twelve months of partnership."
+                                label={t("provenOutcomes.label")}
+                                value={t("provenOutcomes.value")}
+                                img="/icon.svg"
+                                description={t("provenOutcomes.description")}
                             >
 
                                 <Odometer
-                                    value={89}
+                                    value={80}
                                     suffix="%"
                                     duration={4}
                                     loops={1}
@@ -48,20 +57,26 @@ function WhyUs() {
                             </StatsCard>
                         </div>
 
+
                         <div data-animate="scale-in">
                             <ImageCard />
                         </div>
 
-                        <div data-animate="scale-in" className='lg:col-span-2'>
+
+                        <div
+                            data-animate="scale-in"
+                            className="lg:col-span-2"
+                        >
                             <ChartCard />
                         </div>
 
+
                         <div data-animate="scale-in">
                             <StatsCard
-                                label="Targeted growth"
-                                value="98%"
-                                img={"/icon-2.svg"}
-                                description="Client retention rate due to our hands-on approach and measurable impact on financial results."
+                                label={t("targetedGrowth.label")}
+                                value={t("targetedGrowth.value")}
+                                img="/icon-2.svg"
+                                description={t("targetedGrowth.description")}
                             >
 
                                 <Odometer
@@ -76,13 +91,10 @@ function WhyUs() {
                         </div>
 
                     </div>
-
                 </Reveal>
-
-
             </div>
         </section>
-    )
+    );
 }
 
 export default WhyUs;

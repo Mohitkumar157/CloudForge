@@ -4,6 +4,7 @@ import { X } from 'lucide-react';
 import { useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import LanguageSwitcher from "../LanguageSwitcher";
 gsap.registerPlugin(ScrollTrigger);
 
 const navLinks = [
@@ -17,7 +18,7 @@ const navLinks = [
 function Humburger() {
     const [open, setOpen] = useState(false);
     const navRef = useRef([]);
-    let tl  = gsap.timeline();
+    let tl = gsap.timeline();
     useEffect(() => {
 
         if (open) {
@@ -25,10 +26,10 @@ function Humburger() {
                 y: -100,
                 stagger: 0.08,
                 duration: .7,
-                ease: "expo.out", 
+                ease: "expo.out",
             });
         }
-        else{
+        else {
             tl.reverse();
         }
     }, [open])
@@ -61,7 +62,9 @@ function Humburger() {
 
                     <div className="flex justify-between items-center">
                         <Link href={"/"} className="logo">
-                            <h2 className='font-semibold uppercase text-[18px]! text-[#f1f1f1]'>CloudForge</h2>
+                            <h2 className='font-semibold uppercase text-[18px]! text-[#f1f1f1]'>
+                                CloudForge
+                            </h2>
                         </Link>
                         <div onClick={() => setOpen(false)}>
                             <X className="w-9 h-9" strokeWidth={1.25} />
@@ -86,6 +89,8 @@ function Humburger() {
                         ))}
 
                     </ul>
+                       <div className="w-full h-[0.5px] bg-(--text-primary) my-5"></div>
+                    <LanguageSwitcher />
                 </div>
             </nav>
         </div>

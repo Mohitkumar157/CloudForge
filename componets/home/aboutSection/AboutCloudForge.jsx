@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import AboutContent from './AboutContent';
-function AboutKairo() {
+function AboutCloudForge() {
     
     return (
         <section className='about-kairo pb-16 md:pb-20 lg:pb-24'>
@@ -12,7 +12,8 @@ function AboutKairo() {
                         <Image
                             src={"/about1.webp"}
                             fill
-                            className='object-cover'
+                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                            className='object-cover object-center'
                             alt='about-img'
                         />
                     </div>
@@ -24,4 +25,4 @@ function AboutKairo() {
     )
 }
 
-export default AboutKairo;
+export default AboutCloudForge;

@@ -17,7 +17,6 @@ function BlogCard({cardData}) {
                     alt='blog-image'
                     fill
                     className='object-cover object-center group-hover:scale-110 transition-all duration-500'
-                    style={{ width: "100%", height: "100%" }}
                 />
                 <div className='absolute h-20 w-[200%] bg-[#f1f1f1] top-[50%] opacity-0 -rotate-45 right-[200%] group-hover:right-[-200%] group-hover:opacity-50 transition-all duration-900'></div>
             </div>
@@ -36,7 +35,7 @@ function BlogCard({cardData}) {
                     <div className='absolute h-px rounded-full w-0 bg-black left-0 group-hover:w-full transition-all duration-500'></div>
                 </div>
                 <div className="card-footer flex gap-4 items-center">
-                    <img src={cardData?.autherImage} alt="auther" className='w-8 h-8 rounded-full object-cover' />
+                    <img src={cardData?.authorImage} alt="auther" className='w-8 h-8 rounded-full object-cover' />
                     <span className='auther-name'>{cardData?.autherName}</span>
                 </div>
             </div>

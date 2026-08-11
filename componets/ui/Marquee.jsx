@@ -3,16 +3,17 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
 import SecondHeading from './SecondHeading';
-
+import { useTranslations } from 'next-intl';
 
 function Marquee({ imageArray }) {
+  const t = useTranslations("HomePage.MarqueeSection");
   return (
     <section className='relative group1 test overflow-hidden '>
 
 
             <div className='mb-4 md:mb-6 overflow-hidden'>
               <SecondHeading className='text-center'>
-                Strategic services that power modern businesses
+                {t("title")}
               </SecondHeading>
             </div>
 

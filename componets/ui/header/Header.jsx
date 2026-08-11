@@ -5,9 +5,10 @@ import React, { useEffect, useState } from 'react'
 import Nav from './Nav';
 import PrimaryButton from '../PrimaryButton';
 import Humburger from './Humburger';
-
+import LanguageSwitcher from '../LanguageSwitcher';
+import { useTranslations } from "next-intl";
 function Header() {
-    
+   const t = useTranslations("Header"); 
     
     const [scrollHeight, setScrollHeight] = useState(0);
     const [screenHeight, setScreenHeight] = useState(0)
@@ -31,10 +32,12 @@ function Header() {
                             <h2 className='uppercase text-[40px]! text-[#f1f1f1]'>CloudForge</h2>
                         </Link>
                         <Nav />
-                        <div className="ctc">
+                        <div className="ctc flex items-center gap-4">
+
+                            <LanguageSwitcher />
                             
                             <PrimaryButton
-                                ctaText={"Get a quote"}
+                                ctaText={t("getQuote")}
                                 className="group-hover:bg-[#20324f] 
                         bg-[#f1f1f1] group-hover:text-[#f1f1f1]"
                                 btnTextClass={"text-[#212121] group-hover:text-[#f1f1f1] transition-all duration-300"}

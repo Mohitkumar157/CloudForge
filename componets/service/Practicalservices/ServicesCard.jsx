@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-function ServicesCard({data :{description , title , image , tags}}) {
+function ServicesCard({data :{description , title , image , tags} , index}) {
     
     return (
-        <section className='border-t border-(--border-primary)'>
+        <section className={`service-card bg-[#3d4753] relative border-t border-(--border-primary)`}>
             <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-6!">
                 <div className='hidden lg:block'>
                     <div className='flex gap-1'>

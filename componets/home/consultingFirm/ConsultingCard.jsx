@@ -2,15 +2,17 @@
 import React from 'react'
 
 function ConsultingCard(
-    { data: { heading, subHeading, paragraph },
+    { data: {subHeading, paragraph },
         index,
         activeCard,
         setActiveCard,
+        dataAnimate,
         children
     }) {
 
     return (
             <div
+            data-animate = {dataAnimate}
             onMouseEnter={() => setActiveCard(index)}
             className={`h-full consulting-card p-10 transition-all duration-500 ease-in
          ${index === activeCard ? "bg-[#59624d] text-[#f1f1f1]" : " bg-[#f8f8f8] text-[#212121]"}

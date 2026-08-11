@@ -30,7 +30,7 @@ function HeroMobile() {
 
             <div className=' w-full h-screen absolute left-0 top-0 overlay bg-[linear-gradient(#fff0_67%,#0f1e36ab),linear-gradient(#0f1e36b8,#fff0_26%),linear-gradient(#0f1e3652,#0f1e3652)]'></div>
             <div className='container text-[#f1f1f1] absolute z-50 bottom-0'>
-                <h1 className='text-4xl w-fit font-semibold'>
+                <h1 className='text-5xl w-fit font-semibold'>
                     <div className='flex gap-5 items-end'>
                         <div className='w-fit'>Design</div>
                         <ClientAvatars happyClients={happyClients} />

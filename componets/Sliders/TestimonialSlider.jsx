@@ -1,9 +1,7 @@
 "use client";
 import { ArrowRight } from 'lucide-react';
 import { ArrowLeft } from 'lucide-react';
-
-
-import { testimonials } from "@/app/data/testimonials";
+import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {
@@ -16,7 +14,9 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import Image from 'next/image';
 
-export default function TestimonialSlider({setActiveIndex , handlerSlideChange}) {
+export default function TestimonialSlider({ setActiveIndex, handlerSlideChange }) {
+  const t = useTranslations("AboutPage.SliderSection");
+  const testimonials = t.raw("testimonials");
   return (
     <Swiper
       modules={[Navigation, Autoplay, EffectFade]}
@@ -65,19 +65,19 @@ export default function TestimonialSlider({setActiveIndex , handlerSlideChange})
 
       <div className="flex gap-6 justify-end pt-8 border-t border-(--border-secondary)">
         <div className='group'>
-          <button 
-          aria-label="Previous slide"
-          className="group-hover:bg-[#59624d] transition-bg-color duration-300 prev-btn cursor-pointer w-10 h-10 border border-(--border-secondary) rounded-full flex justify-center items-center">
-          <ArrowLeft className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
-        </button>
+          <button
+            aria-label="Previous slide"
+            className="group-hover:bg-[#59624d] transition-bg-color duration-300 prev-btn cursor-pointer w-10 h-10 border border-(--border-secondary) rounded-full flex justify-center items-center">
+            <ArrowLeft className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
+          </button>
         </div>
 
         <div className='group'>
-          <button 
-          aria-label="Next slide"
-          className="group-hover:bg-[#59624d] transition-bg-color duration-300 next-btn cursor-pointer w-10 h-10 rounded-full border border-(--border-secondary) flex justify-center items-center">
-          <ArrowRight className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
-        </button>
+          <button
+            aria-label="Next slide"
+            className="group-hover:bg-[#59624d] transition-bg-color duration-300 next-btn cursor-pointer w-10 h-10 rounded-full border border-(--border-secondary) flex justify-center items-center">
+            <ArrowRight className='text-(--subheading-primary) w-4 h-4 group-hover:text-(--heading-primary) transition-all duration-300' />
+          </button>
         </div>
       </div>
     </Swiper>

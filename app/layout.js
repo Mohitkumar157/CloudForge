@@ -1,11 +1,8 @@
 
 import { Sora , Inter } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+
 
 import "./globals.css";
-import Header from "@/componets/ui/header/Header";
-import Footer from "@/componets/ui/footer/Footer";
 
 const sora = Sora({
   subsets: ['latin'],
@@ -30,16 +27,12 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
 
-  const messages = await getMessages();
+
 
   return (
     <html lang="en">
       <body className={`${sora.variable} ${inter.variable} overflow-x-hidden`}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
           {children}
-          <Footer />
-        </NextIntlClientProvider>
       </body>
     </html>
   );
