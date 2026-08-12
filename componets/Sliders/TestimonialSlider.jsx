@@ -50,6 +50,7 @@ export default function TestimonialSlider({ setActiveIndex, handlerSlideChange }
               src={item.companyImage}
               alt={item.alt}
               fill
+              sizes="(max-width: 767px) 100vw, 50vw"
               className='object-cover object-center'
             />
           </div>

@@ -57,6 +57,7 @@ function SliderComponent() {
                             <Image
                                 src={currentTestimonial.founderImage}
                                 fill
+                                sizes="(max-width: 767px) 100vw, 50vw"
                                 alt={currentTestimonial.alt.founder}
                                 className='object-center object-cover'
                             />

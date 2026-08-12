@@ -47,6 +47,7 @@ function WhyChooseUs() {
                   src="/service/consulting-image.webp"
                   alt="Consulting-image"
                   fill
+                  sizes="(max-width: 767px) 100vw, 50vw"
                   className="object-cover object-center"
                   data-animate="scale-image"
                 />

@@ -7,7 +7,7 @@ import { Calendar } from 'lucide-react';
 
 
 function BlogCard({cardData}) {
-   console.log("Auther Data",cardData);
+
    
     return (
         <div data-animate="fade-up" className='blog-card bg-(--bg-primary) rounded-2xl overflow-hidden group'>
@@ -16,6 +16,8 @@ function BlogCard({cardData}) {
                     src={cardData?.cardImage}
                     alt='blog-image'
                     fill
+                    loading='lazy'
+                    sizes="(max-width: 767px) 100vw, 50vw"
                     className='object-cover object-center group-hover:scale-110 transition-all duration-500'
                 />
                 <div className='absolute h-20 w-[200%] bg-[#f1f1f1] top-[50%] opacity-0 -rotate-45 right-[200%] group-hover:right-[-200%] group-hover:opacity-50 transition-all duration-900'></div>

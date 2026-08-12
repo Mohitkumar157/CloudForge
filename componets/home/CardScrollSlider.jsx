@@ -28,6 +28,7 @@ function MobileCardSlider() {
               src={image}
               alt="card-image"
               fill
+              sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover object-center"
             />
           </div>
@@ -82,6 +83,7 @@ function DesktopCardScroll() {
               src={image}
               alt="card-image"
               fill
+              sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover object-top"
             />
           </div>

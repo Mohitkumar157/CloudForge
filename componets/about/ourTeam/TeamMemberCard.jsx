@@ -8,6 +8,7 @@ function TeamMemberCard({ card }) {
                 src={card?.src}
                 alt={card.title}
                 fill
+                sizes="(max-width: 767px) 100vw, 50vw"
                 className='object-cover object-center group-hover:scale-[1.1] transition-all duration-500'
             />
             <div className='absolute w-full flex justify-center p-8'>

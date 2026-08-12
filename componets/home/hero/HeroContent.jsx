@@ -105,6 +105,7 @@ function HeroContent() {
                                     style={{ width: "auto", height: "auto" }}
                                     width={200}
                                     height={200}
+                                    sizes="(max-width: 767px) 100vw, 50vw"
                                     src={slide.image}
                                     alt="busniess"
                                     className='object-cover ' />

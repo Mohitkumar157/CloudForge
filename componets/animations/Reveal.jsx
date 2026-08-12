@@ -15,19 +15,12 @@ function Reveal({ children }) {
 
         // Mobile Animation
         mm.add("(max-width: 767px)", () => {
-
             const cards = wrapperRef.current.querySelectorAll("[data-animate]");
-
             cards.forEach((card) => {
-
                 const config = animations[card.dataset.animate]
                 if (!config) return;
-
                 const childrens = card.querySelectorAll("[data-animate-child]");
-                console.log("CHILDREN", childrens);
-
                 const childTl = gsap.timeline({ paused: true });
-
                 childrens.forEach((child) => {
                     const childConfig = animations[child.dataset.animateChild];
 
@@ -41,9 +34,6 @@ function Reveal({ children }) {
                         0
                     );
                 });
-
-
-
                 gsap.from(card, {
                     ...config.from,
                     duration: config.duration ?? 1,
@@ -66,34 +56,19 @@ function Reveal({ children }) {
                     },
                 });
             });
-
-
         });
 
-
         //  Desktop animation
-
         mm.add("(min-width: 768px)", () => {
             const cards = wrapperRef.current.querySelectorAll("[data-animate]");
-
-
-
             cards.forEach((card) => {
                 const config = animations[card.dataset.animate]
                 if (!config) return;
-
-
-
                 const childrens = card.querySelectorAll("[data-animate-child]");
-                console.log("CHILDREN", childrens);
-
                 const childTl = gsap.timeline({ paused: true });
-
                 childrens.forEach((child) => {
                     const childConfig = animations[child.dataset.animateChild];
-
                     if (!childConfig) return;
-
                     childTl.from(child, {
                         ...childConfig.from,
                         duration: childConfig.duration ?? 1,
@@ -103,8 +78,6 @@ function Reveal({ children }) {
                     );
                 });
 
-
-
                 gsap.from(card, {
                     ...config.from,
                     duration: config.duration ?? 1,
@@ -113,6 +86,7 @@ function Reveal({ children }) {
                         trigger: card,
                         start: config.desktopStart ?? "top 75%",
                         invalidateOnRefresh: true,
+
                         onEnter: () => {
                             childTl.play();
                             const odometers = card.querySelectorAll("[data-odometer]");
@@ -123,19 +97,13 @@ function Reveal({ children }) {
                             });
                         },
                     },
-
                 })
             })
         });
-
-
         requestAnimationFrame(() => {
             ScrollTrigger.refresh();
         });
-
         return () => mm.revert();
-
-
     }, { scope: wrapperRef })
     return (
         <section ref={wrapperRef} className='w-full'>

@@ -24,6 +24,7 @@ function ServicesOverview() {
                         <Image
                             src={"/about/About-designer-slaider-3.webp"}
                             fill
+                            sizes="(max-width: 767px) 100vw, 50vw"
                             alt='desiner-image'
                             className='object-cover object-center'
                             data-animate="scale-image"

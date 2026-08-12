@@ -19,7 +19,7 @@ function OurFeatures() {
   const t = useTranslations("AboutPage.OurFeaturesSection");
   const services = t.raw("services");
   const tags = t.raw("tags");
-  
+
   return (
     <section className='py-16 md:py-20 lg:py-24'>
       <div className="container">
@@ -29,10 +29,15 @@ function OurFeatures() {
             <FeatureCard>
 
               <div data-animate="fade-up" className='flex flex-col gap-4 justify-between h-full'>
-                <SubHeading headingText={t("subHeading")} />
+               
+                 <SubHeading headingText={t("subHeading")} />
+               
 
                 <div className='overflow-hidden'>
-                  <h2 className='text-[28px] md:text-[40px] leading-[1.15] font-normal'>
+                  <h2
+                    data-animate-child="child-fade-up"
+                    className='text-[28px] md:text-[40px] leading-[1.15] font-normal'>
+
                     {t("title")}
                   </h2>
                 </div>
@@ -40,7 +45,7 @@ function OurFeatures() {
 
                 <div className="flex items-center gap-5 font-semibold overflow-hidden">
                   {tags.map((tag, index) => (
-                    <div key={index} data-animate="fade-up">
+                    <div key={index} data-animate-child="child-fade-up">
                       [{tag}]
                     </div>
                   ))}
@@ -52,17 +57,17 @@ function OurFeatures() {
                     sizes="(max-width: 768px) 100vw, 380px"
                     fill
                     className='object-cover object-center rounded-xl'
-                    data-animate="scale-in"
+                    data-animate-child="child-scale-in"
                   />
                 </div>
 
                 <div className='overflow-hidden'>
-                  <div data-animate="fade-up" className='p-6 bg-[#f8f8f8] rounded-xl flex flex-col gap-6' >
+                  <div data-animate-child="child-fade-up" className='p-6 bg-[#f8f8f8] rounded-xl flex flex-col gap-6' >
                     <div>
                       <h3 className='font-semibold'>{t("revenueCard.title")}</h3>
                       <p className='pt-4 font-semibold text-(--paragraph-secondary)'>
                         {t("revenueCard.description")}
-                        </p>
+                      </p>
                     </div>
                     <div className='flex items-center gap-4'>
                       <div className='bg-[#59624d] p-4 rounded-full w-fit'>
@@ -70,11 +75,11 @@ function OurFeatures() {
                       </div>
                       <div>
                         <h4 className='font-semibold'>
-                         {t("revenueCard.strategyTitle")}
-                          </h4>
+                          {t("revenueCard.strategyTitle")}
+                        </h4>
                         <span className='text-(--paragraph-secondary)'>
                           {t("revenueCard.milestones")}
-                          </span>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -93,7 +98,7 @@ function OurFeatures() {
                     fill
                     alt='fature-image'
                     className='object-cover md:object-center object-top'
-                    data-animate="scale-image"
+                    data-animate-child="child-scale-image"
                   />
 
                 </div>
@@ -104,12 +109,12 @@ function OurFeatures() {
               <FeatureCard>
                 <div data-animate="fade-up" className='flex h-full flex-col gap-8 md:justify-between'>
 
-                  <div className='p-8 rounded-2xl flex flex-col gap-6 bg-(--bg-secondry)'>
+                  <div data-animate-child = "child-fade-up" className='p-8 rounded-2xl flex flex-col gap-6 bg-(--bg-secondry)'>
                     <div className='flex justify-between items-center'>
                       <ClientAvatars happyClients={happyClients} />
                       <h3 className='text-[18px]! '>
                         {t("growthStats.quarterlyGrowth")}
-                        </h3>
+                      </h3>
                     </div>
 
                     <div className='flex items-center gap-4'>
@@ -117,24 +122,28 @@ function OurFeatures() {
                         <img src="/about/About-sture.svg" alt="star" loading='lazy' />
                       </div>
                       <p className='font-semibold'>
-                       {t("growthStats.rating")}
-                        </p>
+                        {t("growthStats.rating")}
+                      </p>
                     </div>
 
                   </div>
 
                   <div className='flex items-center justify-center gap-4 bg-(--bg-cards) p-4 text-(--heading-primary) rounded-full'>
-                    <div><img src="/about/About-sture.svg" alt="star" loading='lazy' /></div>
+                    <div>
+                      <img src="/about/About-sture.svg" alt="star" loading='lazy' />
+                    </div>
+
                     <p className='text-[20px] font-semibold'>
                       {t("growthStats.projects")}
-                      </p>
+                    </p>
+
                   </div>
 
                   <div className=''>
                     <ServicesSection>
                       {services.map((item, index) => (
                         <div key={index} className={`about-list overflow-hidden `}>
-                          <div data-animate="list"
+                          <div data-animate-child="child-fade-up"
                             className={`relative cursor-pointer group flex justify-between items-cente w-full ${index === 0 ? "pb-4 md:pb-7" : "py-4 md:py-7"} border-b border-gray-400`}
                           >
                             <div className="flex text-xl items-center gap-2 font-semibold">

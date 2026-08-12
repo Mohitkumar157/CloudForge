@@ -35,8 +35,6 @@ function ClientAvatars({
 
 
     }, { scope: sectionRef })
-
-console.log("Animation on" , animationOn);
     return (
         <div ref={sectionRef} className='happy-client overflow-hidden flex items-center justify-start' >
             {

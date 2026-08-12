@@ -11,7 +11,7 @@ export default function ScrollColorLetters({
   startColor = '#bfbfbf',
   endColor = '#212121',
   startTrigger = 'top 80%',
-  endTrigger = 'bottom 50%',
+  endTrigger = 'bottom 80%',
   scrubValue = 1,
 }) {
   const containerRef = useRef(null);

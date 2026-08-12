@@ -18,6 +18,7 @@ function StatsCard({ data , children , index }) {
                         <Image
                             src={data.src}
                             fill
+                            sizes="(max-width: 767px) 100vw, 50vw"
                             alt={data.title}
                             className='object-cover object-center'
                         />

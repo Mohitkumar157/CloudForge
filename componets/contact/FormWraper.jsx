@@ -12,7 +12,9 @@ function FormWraper() {
           <Image
           src={"/contact/Contact-image.webp"}
           fill
+          sizes="(max-width: 767px) 100vw, 50vw"
           alt='form-image'
+          loading="eager"
           className='object-cover object-center'
           data-animate = "scale-image"
            />

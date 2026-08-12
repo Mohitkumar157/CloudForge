@@ -14,8 +14,8 @@ function Footer() {
       <div className='w-full h-px bg-[#ccc]'></div>
       <div className="container py-14!">
         <Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 overflow-hidden">
-            <div data-animate="fade-up" className='flex flex-col gap-8 md:gap-18'>
+          <div data-animate="fade-up" className="grid grid-cols-1 md:grid-cols-2 gap-16 overflow-hidden">
+            <div data-animate-child="child-fade-up" className='flex flex-col gap-8 md:gap-18'>
               <h3 className='text-[#f1f1f1] text-[40px] mt-4 md:mt-0 leading-12'>
                 {t("newsletter.title1")}
                 <br /> 
@@ -55,7 +55,7 @@ function Footer() {
 
             <div className='important-links text-[#f1f1f1] grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
 
-              <div data-animate="fade-up" className='flex flex-col gap-5'>
+              <div data-animate-child="child-fade-up" className='flex flex-col gap-5'>
                 <h2 className='text-[#f1f1f1] text-[20px]!'>
                   {t("quickLinks.title")}
                 </h2>
@@ -88,7 +88,7 @@ function Footer() {
               </div>
 
 
-              <div data-animate="fade-up" className='flex flex-col gap-5'>
+              <div data-animate-child="child-fade-up" className='flex flex-col gap-5'>
                 <h2 className='text-[#f1f1f1] text-[20px]!'>
                   {t("otherLinks.title")}
                 </h2>
@@ -111,7 +111,7 @@ function Footer() {
                 </ul>
               </div>
 
-              <div data-animate="fade-up" className='flex flex-col gap-5'>
+              <div data-animate-child="child-fade-up" className='flex flex-col gap-5'>
                 <div className='flex flex-col gap-5'>
                   <h2 className='text-[#f1f1f1] text-[20px]!'>
                     {t("address.title")}

@@ -8,8 +8,8 @@ const animations = {
 
   "child-fade-up": {
     from: {
-      y: 400,
-     
+      y: 100,
+      opacity: 0,
     },
   },
 

@@ -34,6 +34,7 @@ function CardStack({ children }) {
         cards.forEach((card) => {
           ScrollTrigger.create({
             trigger: card,
+            scrub :5,
             start: "top 20%",
             end: "bottom 20%",
           });

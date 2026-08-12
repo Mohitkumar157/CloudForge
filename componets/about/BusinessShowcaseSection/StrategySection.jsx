@@ -15,12 +15,13 @@ function StrategySection() {
                     <Image
                         src={"/about/About-designer-image.webp"}
                         fill
+                        sizes="(max-width: 767px) 100vw, 50vw"
                         className='object-cover object-center'
                         alt='designer-image'
                         data-animate="scale-in"
                     />
                 </div>
-                <div className='lg:w-[45%] w-full flex flex-col justify-between'>
+                <div data-animate="fade-up" className='lg:w-[45%] w-full flex flex-col justify-between'>
                     <ScrollColorText
                         text={t("text")}
                         className='text-[28px] md:text-[40px] leading-[1.15] font-semibold'
@@ -29,13 +30,13 @@ function StrategySection() {
 
                     <div className="flex items-center gap-5 font-semibold my-6 overflow-hidden">
                         {tags.map((tag, index) => (
-                            <div key={index} data-animate="fade-up">
+                            <div key={index} data-animate-child="child-fade-up">
                                 [{tag}]
                             </div>
                         ))}
                     </div>
                     <div className='overflow-hidden'>
-                        <div data-animate="fade-up">
+                        <div data-animate-child="child-fade-up">
                             <PrimaryButton
                                 ctaText={t("cta")}
                                 className={"bg-[#20324f] text-#f1f1f1 group-hover:bg-[#f1f1f1] group-hover:border group-hover:border-[#20324f] transition-all duration-300"}

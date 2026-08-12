@@ -26,9 +26,9 @@ function Marquee({ imageArray }) {
               src={imageObj?.src}
               alt={"solution-image"}
               width={380}
-              quality={100}
+              sizes="(max-width: 767px) 100vw, 50vw"
               height={350}
-              className='object-cover group-hover:scale-115 
+              className='w-95 h-87.5 object-top object-cover group-hover:scale-115 
             transition-all duration-500 ease-in-out'
             />
             <div className='w-full px-6 flex justify-between items-center

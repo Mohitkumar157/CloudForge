@@ -2,7 +2,7 @@ import React from 'react'
 import BlogCard from '../home/blog/BlogCard'
 
 function BlogCardWraper({ data }) {
-    console.log("Data", data);
+  
 
     return (
         <>
