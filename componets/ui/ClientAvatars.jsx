@@ -30,8 +30,8 @@ function ClientAvatars({
                 }
             })
         }
-     
-     
+
+
 
 
     }, { scope: sectionRef })
@@ -42,10 +42,10 @@ function ClientAvatars({
                     <img
                         src={clientPhoto}
                         alt="happy-client-image"
+                        key={index}
                         width={50}
                         height={50}
-                        key={index}
-                        className={`max-w-12.5 h-auto relative top-0`}
+                        className={`w-10 md:max-w-12.5 h-auto relative top-0`}
                         style={{
                             left: `${index * -12}px`,
                         }}

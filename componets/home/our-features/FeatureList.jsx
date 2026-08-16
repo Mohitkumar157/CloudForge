@@ -14,18 +14,16 @@ function FeatureList() {
     <div className="flex flex-col justify-between gap-12">
       <ul className="list-none flex flex-col gap-4">
         {featuresList.map((item, index) => (
-          <div key={index} className="overflow-hidden">
-            <li
-              data-animate="fade-up"
-              className="flex items-center gap-2 font-semibold"
-            >
+          <li key={index} className="overflow-hidden">
+          <div data-animate="fade-up" className="flex items-center gap-2 font-semibold">
               <img
                 src={logoTik}
                 alt="logo-tik"
+                className="w-5.5 h-5.5 object-cover"
               />
               {item}
-            </li>
           </div>
+            </li>
         ))}
       </ul>
 

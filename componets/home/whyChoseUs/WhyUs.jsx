@@ -1,12 +1,12 @@
-"use client";
 
+import dynamic from "next/dynamic";
 import React from "react";
 import InfoCard from "./InfoCard";
 import StatsCard from "./StatsCard";
 import ImageCard from "./ImageCard";
 import ChartCard from "./ChartCard";
 import SecondHeading from "@/componets/ui/SecondHeading";
-import Reveal from "@/componets/animations/Reveal";
+const Reveal = dynamic(()=> import("@/componets/animations/Reveal"));
 import Odometer from "@/componets/ui/Odometer";
 import { useTranslations } from "next-intl";
 

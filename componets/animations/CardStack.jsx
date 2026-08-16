@@ -63,7 +63,7 @@ function CardStack({ children }) {
         });
       });
 
-      ScrollTrigger.refresh();
+      
 
       return () => {
         mm.revert();

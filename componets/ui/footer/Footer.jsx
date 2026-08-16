@@ -1,8 +1,9 @@
 import React from 'react'
+import dynamic from 'next/dynamic';
 import { ArrowUpRight } from 'lucide-react';
-import FooterHeader from './FooterHeader'
 import Link from 'next/link';
-import Reveal from '@/componets/animations/Reveal';
+const FooterHeader = dynamic(()=> import('./FooterHeader'));
+const Reveal = dynamic(()=> import('@/componets/animations/Reveal'));
 import { useTranslations } from "next-intl";
 function Footer() {
     const t = useTranslations("Footer");

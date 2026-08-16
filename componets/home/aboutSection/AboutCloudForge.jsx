@@ -12,9 +12,9 @@ function AboutCloudForge() {
                         <Image
                             src={"/about1.webp"}
                             fill
-                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                            sizes="(max-width: 767px) 100vw, 50vw"
                             className='object-cover object-center'
-                            alt='about-img'
+                            alt='girl reading documents'
                         />
                     </div>
 

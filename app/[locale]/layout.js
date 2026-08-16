@@ -1,12 +1,11 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-
+import dynamic from "next/dynamic";
 import { routing } from "@/src/i18n/routing";
 
 import Header from "@/componets/ui/header/Header";
-import Footer from "@/componets/ui/footer/Footer";
-
+const Footer = dynamic(()=> import("@/componets/ui/footer/Footer"));
 export default async function LocaleLayout({ children, params,}) {
   const { locale } = await params;
 

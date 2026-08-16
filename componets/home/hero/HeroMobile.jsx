@@ -16,14 +16,13 @@ function HeroMobile() {
             <div className='w-full h-screen absolute inset-0'>
                 <div className='relative aspect-[1/1.6] w-full flex justify-center items-center'>
                     <Image
-                        src={"/hero-1.webp"}
-                        alt='hero-image'
+                        src="/hero-1.webp"
+                        alt="hero-image"
                         fill
-                        unoptimized
                         priority
-                        quality={100}
+                        quality={85}
                         sizes="100vw"
-                        className='object-cover object-[65%_center]'
+                        className="object-cover object-[65%_center]"
                     />
                 </div>
             </div>
@@ -31,7 +30,7 @@ function HeroMobile() {
             <div className=' w-full h-screen absolute left-0 top-0 overlay bg-[linear-gradient(#fff0_67%,#0f1e36ab),linear-gradient(#0f1e36b8,#fff0_26%),linear-gradient(#0f1e3652,#0f1e3652)]'></div>
             <div className='container text-[#f1f1f1] absolute z-50 bottom-0'>
                 <h1 className='text-5xl w-fit font-semibold'>
-                    <div className='flex gap-5 items-end'>
+                    <div className='flex gap-3 md:gap-5 items-end'>
                         <div className='w-fit'>Design</div>
                         <ClientAvatars happyClients={happyClients} />
                     </div>
@@ -54,12 +53,12 @@ function HeroMobile() {
                 <div className='py-7 w-full flex flex-col items-start md:flex-row md:items-center md:gap-5 border-t border-[#ccc] md:w-fit'>
                     <div className='flex gap-4 items-center'>
                         <p className='text-[24px] md:text-[40px] font-semibold'>25+</p>
-                        <p className='text-[#f1f1f1] font-semibold'>Years of work <br className='hidden md:block'/> experience</p>
+                        <p className='text-[#f1f1f1] font-semibold'>Years of work <br className='hidden md:block' /> experience</p>
                     </div>
 
                     <div className='flex gap-4 items-center'>
                         <p className='text-[24px] md:text-[40px] font-semibold'>98%</p>
-                        <p className='text-[#f1f1f1] font-semibold'>Rated 4.9/5 from <br className='hidden md:block'/> over 1200 reviews</p>
+                        <p className='text-[#f1f1f1] font-semibold'>Rated 4.9/5 from <br className='hidden md:block' /> over 1200 reviews</p>
                     </div>
 
                 </div>
@@ -68,4 +67,4 @@ function HeroMobile() {
     )
 }
 
-export default HeroMobile
+export default HeroMobile;

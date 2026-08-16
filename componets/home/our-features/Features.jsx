@@ -92,7 +92,7 @@ function Features() {
             <img
               src="/call-image.webp"
               alt="call-image"
-              className="max-w-13.75 h-auto"
+              className="w-13.75 h-auto"
             />
           </div>
 

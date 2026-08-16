@@ -1,10 +1,10 @@
 
-
+import dynamic from "next/dynamic";
 import PrimaryButton from "@/componets/ui/PrimaryButton";
 import React from "react";
 import BlogCard from "./BlogCard";
 import SecondHeading from "@/componets/ui/SecondHeading";
-import Reveal from "@/componets/animations/Reveal";
+const Reveal = dynamic(() => import("@/componets/animations/Reveal"));
 import SubHeading from "@/componets/ui/SubHeading";
 import { useTranslations } from "next-intl";
 

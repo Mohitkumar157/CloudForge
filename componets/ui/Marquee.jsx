@@ -11,11 +11,11 @@ function Marquee({ imageArray }) {
     <section className='relative group1 test overflow-hidden '>
 
 
-            <div className='mb-4 md:mb-6 overflow-hidden'>
-              <SecondHeading className='text-center'>
-                {t("title")}
-              </SecondHeading>
-            </div>
+      <div className='mb-4 md:mb-6 overflow-hidden'>
+        <SecondHeading className='text-center'>
+          {t("title")}
+        </SecondHeading>
+      </div>
 
       <div className='flex animate-marquee hover:[animation-play-state:paused]!
        justify-start w-max items-center gap-6'>
@@ -51,7 +51,7 @@ function Marquee({ imageArray }) {
       </div>
       <div className="absolute left-0 top-0 z-10 h-full w-15 bg-linear-to-r
        from-[#f1f1f1] to-transparent pointer-events-none"></div>
-       <div className="absolute right-0 top-0 z-10 h-full w-15 bg-linear-to-l
+      <div className="absolute right-0 top-0 z-10 h-full w-15 bg-linear-to-l
        from-[#f1f1f1] to-transparent pointer-events-none"></div>
     </section>
   )

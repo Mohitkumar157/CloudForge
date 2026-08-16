@@ -1,9 +1,9 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import FeatureList from './FeatureList'
 import Features from './Features'
-import Reveal from '@/componets/animations/Reveal'
-
+const Reveal = dynamic(()=> import('@/componets/animations/Reveal'));
 function OurFeatures() {
 
   return (

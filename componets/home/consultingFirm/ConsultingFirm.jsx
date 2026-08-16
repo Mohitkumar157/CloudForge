@@ -1,6 +1,7 @@
 import React from 'react'
-import CardScrollSlider from '../CardScrollSlider';
-import AnimatedParagraph from '@/componets/ui/AnimatedParagraph';
+import dynamic from 'next/dynamic';
+const CardScrollSlider = dynamic(()=> import('../CardScrollSlider'))
+const AnimatedParagraph = dynamic(()=> import('@/componets/ui/AnimatedParagraph'));
 import { useTranslations } from "next-intl";
 function ConsultingFirm() {
     const t = useTranslations("HomePage.ConsultingSection");

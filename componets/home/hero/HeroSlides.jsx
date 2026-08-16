@@ -1,11 +1,11 @@
 "use client"
 import gsap from 'gsap';
 import { useTranslations } from "next-intl";
-import React, {useRef } from 'react'
+import React, { useRef } from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Image from 'next/image';
 import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(ScrollTrigger , useGSAP);
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const slideImages = [
     {
@@ -59,18 +59,18 @@ function HeroSlides({ children }) {
         yTo.current = gsap.quickTo(circelRef.current, "y", {
             duration: 0.5,
         });
-         gsap.from('[data-animate="bottom-text"]', {
-                y: 300,
-                opacity: 0,
-                duration: 1,
-                ease: "power4.out",
-            });
+        gsap.from('[data-animate="bottom-text"]', {
+            y: 300,
+            opacity: 0,
+            duration: 1,
+            ease: "power4.out",
+        });
 
-        return (()=>{
+        return (() => {
             tl.kill();
         })
 
-    }, {scope : heroRef})
+    }, { scope: heroRef })
     function mouseMove(e) {
         xTo.current(e.clientX);
         yTo.current(e.clientY);
@@ -87,10 +87,13 @@ function HeroSlides({ children }) {
 
                     ref={(el) => slideRef.current[index] = el}
                 >
-                    <img
+                    <Image
                         src={slide.image}
-                        alt='business'
-                        className=' w-full h-full object-cover object-center'
+                        alt="business"
+                        fill
+                        priority={index === 0}
+                        sizes="100vw"
+                        className="object-cover object-center"
                     />
 
                 </div>)}
@@ -108,7 +111,7 @@ function HeroSlides({ children }) {
                 className='hidden lg:block absolute -bottom-31 left-15
                  text-[#f1f1f1] font-semibold 
                  text-[220px]! z-40'>
-               {t("bottomText")}
+                {t("bottomText")}
             </h2>
         </div>
     )

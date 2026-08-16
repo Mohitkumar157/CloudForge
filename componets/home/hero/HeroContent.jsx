@@ -1,4 +1,3 @@
-"use client";
 import PrimaryButton from '@/componets/ui/PrimaryButton'
 import React from 'react'
 import Image from 'next/image'

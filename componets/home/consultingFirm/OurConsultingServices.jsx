@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from 'react'
+import dynamic from 'next/dynamic';
 import ConsultingCard from "../consultingFirm/ConsultingCard";
 import SecondHeading from '@/componets/ui/SecondHeading';
-import Reveal from '@/componets/animations/Reveal';
+const Reveal = dynamic(()=> import("@/componets/animations/Reveal"));
 import Odometer from '@/componets/ui/Odometer';
 import { useTranslations } from "next-intl";
 

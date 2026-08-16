@@ -35,7 +35,7 @@ function ChartCard() {
             <img src="/tripple-dot.svg" alt="tripple dot" loading="lazy" />
           </div>
           <div className="relative">
-            <img src="/Graph-image.avif" alt="graph-image" loading="lazy" />
+            <img src="/Graph-image.avif" alt="graph-image" loading="lazy" className="w-full h-auto"/>
             <img src="/Graph-bar.svg" alt="graph-bar" loading="lazy" className="absolute bottom-5" />
           </div>
         </div>

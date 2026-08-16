@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const cardImages = [
@@ -28,7 +27,7 @@ function MobileCardSlider() {
               src={image}
               alt="card-image"
               fill
-              sizes="(max-width: 767px) 100vw, 50vw"
+              sizes="(max-width: 767px) 160px, 256px"
               className="object-cover object-center"
             />
           </div>

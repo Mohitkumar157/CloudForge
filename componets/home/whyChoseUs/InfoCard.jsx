@@ -8,7 +8,7 @@ function InfoCard({ title, subtitle, description }) {
         <Card className="flex flex-col gap-10 justify-between h-full">
             <div className="">
                 <h3 className="text-xl font-medium">{title}</h3>
-                <h4 className="text-lg mb-4">{subtitle}</h4>
+                {subtitle && <h4 className="text-lg mb-4">{subtitle}</h4>}
                 <p className="text-(--paragraph-secondary) leading-relaxed">
                     {description}
                 </p>
