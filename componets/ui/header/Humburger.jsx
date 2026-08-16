@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link} from "@/src/i18n/navigation";
 import { X } from "lucide-react";
 import { useState } from "react";
 import LanguageSwitcher from "../LanguageSwitcher";
